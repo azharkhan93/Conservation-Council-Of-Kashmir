@@ -9,10 +9,10 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'About Us', href: '#aboutus-section', current: true },
-    { name: 'Services', href: '#services-section', current: false },
-    { name: 'FAQ', href: '#faq-section', current: false },
-    { name: 'Blog', href: '#blog-section', current: false },
+    { name: 'Home', href: '/', current: true },
+    { name: 'AboutUs', href: '/AboutUs', current: false },
+    { name: 'ContactUs', href: '/Contactus', current: false },
+    { name: 'Blog', href: '/Blog', current: false },
     { name: 'Testimonial', href: '#testimonial-section', current: false },
 ]
 
@@ -40,7 +40,7 @@ const Data = () => {
                             </Link>
                         ))}
                         <div className="mt-4"></div>
-                        <button className="bg-navyblue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 rounded">
+                        <button className="bg-green w-full hover:text-white text-white border border-purple font-medium py-2 px-4 rounded">
                             Donate Us
                         </button>
                         {/* <Contactusform /> */}

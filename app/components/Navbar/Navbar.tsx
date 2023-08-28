@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import { Disclosure } from '@headlessui/react';
 import Link from 'next/link';
@@ -6,6 +7,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Contactusform from './Contactus';
+import Image from 'next/image';
 
 interface NavigationItem {
     name: string;
@@ -14,11 +16,11 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'About Us', href: '/AboutUs', current: false },
-    { name: 'Services', href: '', current: false },
-    { name: 'FAQ', href: '', current: false },
-    { name: 'Blog', href: '', current: false },
-    { name: 'Testimonial', href: '', current: false },
+    // { name: 'Home', href: '/', current: false },
+    { name: 'Home', href: '/', current: false },
+    { name: 'AboutUs', href: '/AboutUs', current: false },
+    { name: 'ContactUs', href: '/ContactUs', current: false },
+    { name: 'OurWork', href: '/Blog', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -33,14 +35,23 @@ const Navbar = () => {
         <Disclosure as="nav" className="navbar">
             <>
                 <div className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8">
-                    <div className="relative flex h-12 sm:h-20 items-center">
+                    <div className="relative flex h-14 sm:h-20 items-center">
                         <div className="flex flex-1 items-center sm:justify-between">
 
                             {/* LOGO */}
 
-                            <div className="flex flex-shrink-0 items-center border-right">
+                            <div className="flex  items-center border-right">
                                 <Link href="/" className='text-2xl sm:text-4xl font-semibold text-black'>
-                                    Conservation Council
+                                    {/* <img src="/images/project logo.png" alt="Conservation Council Logo" className="h-8 sm:h-12" /> */}
+                                    <Image
+                                    className=" sm:justify-start"
+                                        src="/images/project logo.png"
+                                        alt="Conservation Council Logo"
+                                        width={300} // Adjust the width as needed
+                                        height={300} 
+                                        // className=" sm:self-start"
+                                    />
+
                                 </Link>
                             </div>
 
@@ -53,7 +64,7 @@ const Navbar = () => {
                                             key={item.name}
                                             href={item.href}
                                             className={classNames(
-                                                item.current ? 'bg-gray-900' : 'navlinks hover:text-black',
+                                                item.current ? 'bg-gray-900' : 'navlinks hover:text-green',
                                                 'px-3 py-4 rounded-md text-lg font-normal'
                                             )}
                                             aria-current={item.href ? 'page' : undefined}

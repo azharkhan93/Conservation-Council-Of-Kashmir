@@ -22,7 +22,7 @@ html:not([data-scroll="0"]) .navbar {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
   transition: 0.4s linear;
   padding: 0px !important;
-  /* height: 20px; */
+  
   z-index: 3;
 }
 
@@ -275,7 +275,7 @@ html {
   margin-left: -340px;
 }
 
-@media only screen and (max-width: 466px) {
+/* @media only screen and (max-width: 466px) {
   .dance-text {
     margin-left: -265px;
   }
@@ -285,7 +285,7 @@ html {
   position: absolute;
   right: 47rem;
   top: 2rem;
-}
+} */
 
 @media only screen and (max-width: 1250px) {
   .toggleImage {
@@ -308,7 +308,7 @@ html {
 
 
 /* SLICK  */
-.slick-prev,
+/* .slick-prev,
 .slick-next {
   font-size: 0;
   line-height: 0;
@@ -342,7 +342,7 @@ html {
   opacity: .75;
   color: white;
   -webkit-font-smoothing: antialiased;
-}
+} */
 
 
 .imageContainer {

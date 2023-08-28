@@ -106,12 +106,12 @@ export default class MultipleItems extends Component {
 
 
         return (
-            <div className="bg-lightgrey py-20" id="blog-section">
+            <div className="bg-lightgrey py-20 mt-2">
                 <div className='mx-auto max-w-7xl sm:py-4 lg:px-8 '>
 
                     <div className="text-center">
                         {/* <h3 className="text-blue text-lg font-normal tracking-widest">ARTICLES</h3> */}
-                        <h3 className="text-4xl sm:text-6xl font-bold mb-2">Our latest Work..</h3>
+                        <h3 className="text-4xl text-green sm:text-6xl font-bold mb-2">Our latest Work..</h3>
                     </div>
 
 
@@ -125,8 +125,8 @@ export default class MultipleItems extends Component {
                                     <Link href="/">
                                         {/* <h3 className="absolute bg-blue text-white hover:bg-black hover:shadow-xl py-3 px-6 rounded-full article-img">{items.time} read</h3> */}
                                     </Link>
-                                    <h4 className='text-2xl font-bold pt-6 text-black'>{items.heading}</h4>
-                                    <h4 className='text-2xl font-bold pt-1 text-black'>{items.heading2}</h4>
+                                    <h4 className='text-2xl font-bold pt-6 text-green'>{items.heading}</h4>
+                                    <h4 className='text-2xl font-bold pt-1 text-green'>{items.heading2}</h4>
 
                                     <div>
                                         <h3 className='text-base font-normal pt-6 pb-2 opacity-75'>{items.name}</h3>

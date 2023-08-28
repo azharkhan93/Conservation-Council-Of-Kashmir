@@ -27,7 +27,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative h-screen">
+    <div className="relative h-100 ">
       <Slider {...settings}>
         
         <div
@@ -35,27 +35,26 @@ const Banner = () => {
           style={{
             backgroundImage: `url('${images[0]}')`,
             zIndex: currentIndex === 0 ? 1 : 0,
-            opacity: currentIndex === 0 ? 1 : 0,
-             transition: "opacity 1s ease-in-out",
+            // opacity: currentIndex === 0 ? 1 : 0,
+            //  transition: "opacity 1s ease-in-out",
           }}
         >
 
         
           <div className="relative h-screen bg-cover " style={{ backgroundImage: "url('/images/pex.jpg')" }}>
           <div className="container h-full  mx-auto px-4 py-16 md:py-24 lg:py-32">
-            {/* Content */}
-            <div className="flex h-full items-start md:items-center">
-              <div className="md:w-1/2">
-                <h1 className="text-6xl mt-3 md:text-6xl lg:text-7xl font-bold text-white mb-4 text-opacity-80">
+            <div className="flex h-full items-start md:items-center " style={{ marginTop: '8rem' }}>
+              <div className="md:w-1/2 mt-8 md:mt-0 sm:mt-9">
+                <h1 className="text-6xl mt-3  md:text-6xl lg:text-7xl font-bold text-green  text-opacity-80" >
                   Plant Trees, Save Nature
                 </h1>
-                <p className="text-white text-lg md:text-xl opacity-70">
+                <p className="text-white text-lg md:text-xl opacity-80">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                   tristique euismod sapien, eget semper arcu congue sit amet.
                   Phasellus eget eros a neque pellentesque volutpat. Sed nec purus
                   eu justo varius ultrices. Quisque eget vestibulum risus.
                 </p>
-                <button className="mt-8 bg-white text-green-500 text-lg py-3 px-6 rounded-md font-medium hover:bg-green-50 hover:text-green-600 focus:outline-none focus:bg-green-50">
+                <button className="mt-8 bg-green text-white text-lg py-3 px-6 rounded-md font-medium hover:bg-green-50 hover:text-green-600 focus:outline-none focus:bg-green-50">
                   Learn More
                 </button>
               </div>
@@ -68,8 +67,8 @@ const Banner = () => {
           style={{
             backgroundImage: `url('${images[0]}')`,
             zIndex: currentIndex === 0 ? 1 : 0,
-            opacity: currentIndex === 0 ? 1 : 0,
-            transition: "opacity 1s ease-in-out",
+            // opacity: currentIndex === 0 ? 1 : 0,
+            // transition: "opacity 1s ease-in-out",
           }}
         >
 
@@ -77,9 +76,9 @@ const Banner = () => {
           <div className="relative h-screen bg-cover " style={{ backgroundImage: "url('/images/home.jpg')" }}>
           <div className="container h-full opacity-50 mx-auto px-4 py-16 md:py-24 lg:py-32">
             {/* Content */}
-            <div className="flex h-full items-start md:items-center">
-              <div className="md:w-1/2">
-                <h1 className="text-6xl mt-3 md:text-6xl lg:text-7xl font-bold text-white mb-4 text-opacity-80">
+            <div className="flex h-full items-start md:items-center" style={{ marginTop: '8rem' }}>
+              <div className="md:w-1/2 sm:mt-9">
+                <h1 className="text-6xl mt-3 md:text-6xl lg:text-7xl font-bold text-green mb-4 text-opacity-80">
                   Plant Trees, Save Nature
                 </h1>
                 <p className="text-white text-lg md:text-xl opacity-70">
@@ -101,8 +100,8 @@ const Banner = () => {
           style={{
             backgroundImage: `url('${images[0]}')`,
             zIndex: currentIndex === 0 ? 1 : 0,
-            opacity: currentIndex === 0 ? 1 : 0,
-            transition: "opacity 1s ease-in-out",
+            // opacity: currentIndex === 0 ? 1 : 0,
+            // transition: "opacity 1s ease-in-out",
           }}
         >
 
@@ -110,9 +109,9 @@ const Banner = () => {
           <div className="relative h-screen bg-cover " style={{ backgroundImage: "url('/images/ser.jpg')" }}>
           <div className="container h-full  mx-auto px-4 py-16 md:py-24 lg:py-32">
             {/* Content */}
-            <div className="flex h-full items-start md:items-center">
-              <div className="md:w-1/2">
-                <h1 className="text-6xl mt-3 md:text-6xl lg:text-7xl font-bold text-white mb-4 text-opacity-80">
+            <div className="flex h-full items-start md:items-center" style={{ marginTop: '8rem' }}>
+              <div className="md:w-1/2 sm:mt-9">
+                <h1 className="text-6xl mt-3 md:text-6xl lg:text-7xl font-bold text-green mb-4 text-opacity-80">
                   Plant Trees, Save Nature
                 </h1>
                 <p className="text-white text-lg md:text-xl opacity-70">
@@ -129,9 +128,9 @@ const Banner = () => {
           </div>
         </div>
         </div>
-
+        
       </Slider>
-    </div>
+      </div>
   );
 };
 

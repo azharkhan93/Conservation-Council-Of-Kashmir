@@ -10,9 +10,9 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'sm': '640px',
+      'sm': '460px',
       'md': '768px',
-      'lg': '1150px', // change the value of lg to 1150px
+      'lg': '1150px',
       'xl': '1280px',
       '2xl': '1536px',
     },
@@ -40,7 +40,9 @@ module.exports = {
       'btnblue' : "#267dff",
       'bggrey' : '#DDDDDD',
       'footer' : 'rgba(226, 223, 223, 0.75)',
-      'linegrey' : "#C4C4C4"
+      'linegrey' : "#C4C4C4",
+      'green':      "#38a169",
+      'dark-900': '#2C3E50'
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

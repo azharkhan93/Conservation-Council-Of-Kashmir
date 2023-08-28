@@ -10,7 +10,8 @@ const Contactusform = () => {
     const [inputValues, setInputValues] = useState({
         input1: '',
         input2: '',
-        input3: ''
+        input3: '',
+        amount: '' 
     });
 
     const handleChange = (e: { target: { name: string; value: string; }; }) => {
@@ -19,7 +20,7 @@ const Contactusform = () => {
     }
 
     const handleClick = () => {
-        alert(`Name: ${inputValues.input1}, Email-address: ${inputValues.input2}, Message: ${inputValues.input3}`);
+        alert(`Name: ${inputValues.input1}, Email-address: ${inputValues.input2}, Message: ${inputValues.input3},Donation amount: ${inputValues.amount}`);
         setIsOpen(false)
     }
 
@@ -55,7 +56,7 @@ const Contactusform = () => {
                 </div>
             </div>
 
-            {/* <Transition appear show={isOpen} as={Fragment}>
+            <Transition appear show={isOpen} as={Fragment}>
                 <Dialog as="div" className="relative z-50" onClose={closeModal}>
                     <Transition.Child
                         as={Fragment}
@@ -79,17 +80,17 @@ const Contactusform = () => {
                                 leave="ease-in duration-200"
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
-                            > */}
-                                {/* <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all"> */}
+                            > 
+                                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-3 text-left align-middle shadow-xl transition-all"> 
 
-                                    {/* <div className="py-8 lg:py-8 px-4 mx-auto max-w-screen-md">
-                                        <div className="flex flex-shrink-0 items-center justify-center">
+                                     <div className="py-4 lg:py-8 px-4 mx-auto max-w-screen-md">
+                                        {/* <div className="flex flex-shrink-0 items-center justify-center">
                                             <Link href="/" className='text-2xl sm:text-4xl font-semibold text-black'>
                                                 Conservation Council
                                             </Link>
-                                        </div> */}
-                                        {/* <p className="mb-8 lg:mb-16 mt-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Contact us now? Want to send us a feedback?</p> */}
-                                        {/* <form action="#" className="space-y-8" onSubmit={handleSubmit}>
+                                        </div>  */}
+                                         <p className="mb-8 lg:mb-16 mt-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Contact us now? Want to send us a feedback?</p> 
+                                         <form action="#" className="space-y-8" onSubmit={handleSubmit}>
                                             <div>
                                                 <label htmlFor="text" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
                                                 <input
@@ -106,6 +107,7 @@ const Contactusform = () => {
                                                     placeholder="Name..."
                                                 />
                                             </div>
+                                            
                                             <div>
                                                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
                                                 <input
@@ -121,6 +123,35 @@ const Contactusform = () => {
                                                     placeholder="xyz@email.com"
                                                 />
                                             </div>
+                                            <div>
+                                            <label htmlFor="amount" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Donation amount</label>
+                                                <input
+                                                    id="amount"
+                                                    name="amount"
+                                                    type="number"
+                                                    min="1"
+                                                    step="any"
+                                                    autoComplete="off"
+                                                    required
+                                                    value={inputValues.amount}
+                                                    onChange={handleChange}
+                                                    className="relative block w-full appearance-none rounded-md border border-linegrey px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                                    placeholder="Enter amount..."
+                                                />
+                                                
+                                                {/* <input
+                                                    id="email"
+                                                    name="input2"
+                                                    value={inputValues.input2}
+                                                    onChange={handleChange}
+
+                                                    type="email"
+                                                    autoComplete="current-password"
+                                                    required
+                                                    className="relative block w-full appearance-none  rounded-md border border-linegrey px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                                    placeholder="xyz@email.com"
+                                                /> */}
+                                            </div>
                                             <div className="sm:col-span-2">
                                                 <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
                                                 <textarea
@@ -130,27 +161,28 @@ const Contactusform = () => {
                                                     onChange={handleChange}
                                                     className="relative block w-full appearance-none  rounded-md border border-linegrey px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Leave a comment..."></textarea>
                                             </div>
+                                            
                                             <button type="submit"
                                                 onClick={handleClick}
                                                 disabled={isDisabled}
-                                                className="py-3 px-5 text-sm disabled:opacity-50 font-medium w-full text-center text-white rounded-lg bg-blue focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                                                className="py-3 px-5 text-sm disabled:opacity-50 font-medium w-full text-center text-white rounded-lg bg-blue focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Donate</button>
 
-                                        </form> */}
+                                        </form> 
 
-                                    {/* </div> */}
+                                    </div>
 
-                                    {/* <div className='flex justify-end'>
+                                    <div className='flex justify-end'>
                                         <button type="button"
                                             onClick={closeModal}
                                             className="py-3 px-5 mt-2 text-sm font-medium w-50 text-center text-white rounded-lg bg-red hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Close</button>
-                                    </div> */}
+                                    </div>
 
-                                {/* </Dialog.Panel> */}
-                            {/* </Transition.Child>
+                                </Dialog.Panel>
+                             </Transition.Child> 
                         </div>
                     </div>
                 </Dialog>
-            </Transition> */}
+            </Transition>
         </>
     )
 }
