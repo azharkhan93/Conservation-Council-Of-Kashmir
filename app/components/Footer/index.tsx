@@ -14,8 +14,9 @@ const footer = () => {
         <div className="relative mt-14 sm:mt-0 px-5 flex flex-col justify-center items-center text-gray-500">
           {/* ::Site name */}
           <Link href="/">
-          <Image className='mt-5' src="/images/project logo.png"
-                                        alt="Conservation Council Logo" width={350} height={350} />
+          <Image className='mt-5  sm:mt-0' src="/images/project logo.png"
+                                        alt="Conservation Council Logo" width={350} height={350} priority
+                                        style={{ margin: '0' }}/>
         </Link>
           {/* <h1 className="font-title text-4xl text-center font-semibold mt-auto">Fancy Footer 1</h1> */}
           {/* ::Social & copyright */}
@@ -57,7 +58,7 @@ const footer = () => {
             <span className="py-4 text-xs">&copy;2023, Conservation Council Of Kashmir All Rights Reserved.</span>
           </div>
           {/* ::Mobile separator line */}
-          <span className="sm:hidden absolute -top-4 left-1/2 w-1/4 h-px bg-gray-400 transform -translate-x-1/2" aria-hidden="true"/>
+          <span className="sm:hidden absolute bg-black  -top-4 left-1/2 w-1/4 h-px bg-gray-400 transform -translate-x-1/2" aria-hidden="true"/>
         </div>
 
         {/* :NAVIGATION */}
@@ -89,7 +90,7 @@ const footer = () => {
             </p>
           </div>
           {/* ::Phone */}
-          <div className="col-span-2 md:col-span-1 pb-0 md:py-3 px-4 flex flex-col items-center sm:items-start ml-4">
+          <div className="col-span-2 md:col-span-1 pb-0 md:py-3 px-4 flex flex-col items-center sm:items-start ml-4 ">
             <h3 className="py-1.5 md:py-4 text-xl text-gray-500 font-bold tracking-wide ">Phone contact</h3>
             <p className="inline-flex justify-center sm:justify-start text-sm text-gray-400 font-bold">
               <svg xmlns="http://www.w3.org/2000/svg" className="mr-1 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

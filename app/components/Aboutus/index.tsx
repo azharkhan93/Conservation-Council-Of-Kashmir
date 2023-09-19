@@ -11,20 +11,13 @@ const LatestArticles: React.FC = () => {
     const variants = getScrollAnimation();
     setAnimationVariants(variants);
   }, []);
- 
- 
   return (
-    
     <div className="container   my-20 mx-auto md:px-6">
-      
-        <section className="mb-32">
-          <h2 className="mb-16 text-center text-2xl font-extrbold text-green">What We Do...</h2>
-          {/* <h2 className="mb-16 text-center text-2xl font-extrbold">What We Do...</h2> */}
-          
-
-
-
-          
+      <section className="mb-32">
+          <h2 className="mb-3 text-center text-2xl font-extrbold text-green">What We Do...</h2>
+          <p className="mb-8 text-center text-lg text-neutral-500 dark:text-neutral-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque felis a diam facilisis, sed facilisis libero laoreet. Praesent euismod, ipsum vitae scelerisque dignissim, velit ex convallis mi, a vehicula justo ipsum at purus.
+      </p>
           <div className="mb-16 flex flex-wrap">
           
             <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pr-6 " >

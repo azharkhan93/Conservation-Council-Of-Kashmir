@@ -38,7 +38,7 @@ const Contact1 = () => {
     ]
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
-        
+
 
         const formData = {
             fullName,
@@ -89,7 +89,7 @@ const Contact1 = () => {
                         <div className="flex-1 sm:max-w-lg lg:max-w-md">
                             <form
                                 onSubmit={handleSubmit}
-                        
+
                                 className="space-y-5"
                             >
                                 <div>
@@ -134,7 +134,8 @@ const Contact1 = () => {
                                         onChange={(e) => setMessage(e.target.value)} className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
                                 </div>
                                 <button
-                                    type="submit" className="w-full px-4 py-2 text-white font-medium bg-green hover:bg-green active:bg-green rounded-lg duration-150"
+                                    type="submit"
+                                    className="w-full px-4 py-2 text-white font-medium bg-green hover:bg-green active:bg-green rounded-lg duration-150"
                                 >
                                     Submit
                                 </button>

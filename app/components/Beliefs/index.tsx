@@ -2,8 +2,8 @@
 const Beliefs = () => {
     return (
       <div className="mx-auto mt-8 py-5 px-4 w-full max-w-7xl ">
-      <h3 className="text-xl text-green font-medium">Working together for the love of trees.</h3>
-      <p className="mt-3 max-w-4xl text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque alias id quis hic tempora explicabo provident, iure quae praesentium accusantium laborum ab expedita, veniam error, nemo eius! Officiis, cum reiciendis.</p>
+      <h3 className="text-xxl text-green font-medium">Working together for the love of trees.</h3>
+      <p className="mt-3  text-medium text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque alias id quis hic tempora explicabo provident, iure quae praesentium accusantium laborum ab expedita, veniam error, nemo eius! Officiis, cum reiciendis.</p>
     </div>
     //     <div className="  mx-auto  mt-20  w-full max-w-7xl border-gray-200">
     //   <h3 className="text-4xl text-gray-700 font-medium "  >Working together for the love of trees. </h3>

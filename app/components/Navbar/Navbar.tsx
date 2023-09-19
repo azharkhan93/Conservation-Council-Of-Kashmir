@@ -33,6 +33,7 @@ const Navbar = () => {
 
     return (
         <Disclosure as="nav" className="navbar">
+        
             <>
                 <div className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8">
                     <div className="relative flex h-14 sm:h-20 items-center">
@@ -45,10 +46,11 @@ const Navbar = () => {
                                     {/* <img src="/images/project logo.png" alt="Conservation Council Logo" className="h-8 sm:h-12" /> */}
                                     <Image
                                     className=" sm:justify-start"
-                                        src="/images/project logo.png"
+                                        src="/images/logo.png"
                                         alt="Conservation Council Logo"
-                                        width={300} // Adjust the width as needed
-                                        height={300} 
+                                        width={250} // Adjust the width as needed
+                                        height={10}
+                                        priority
                                         // className=" sm:self-start"
                                     />
 
@@ -98,6 +100,7 @@ const Navbar = () => {
                 </div>
             </>
         </Disclosure>
+        
     )
 }
 

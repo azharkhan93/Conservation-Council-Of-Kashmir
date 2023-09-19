@@ -65,12 +65,13 @@ const Blog = ()=>{
 					</a>
 				</div>
 				<div className="flex justify-center">
-					<button type="button" className="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-900 dark:text-gray-400">Load more posts...</button>
+					<button type="button" className="px-6 py-3 text-sm rounded-md hover:underline dark:bg-green dark:text-gray-400">Load more posts...</button>
 				</div>
 			</div>
-		</section><div className="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center">
+		</section>
+		<div className="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center">
 				<div className="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-					<h2 className="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
+					<h2 className="text-3xl font-extrabold text-green dark:text-green sm:text-4xl">
 						<span className="block">
 							Mother hearth host your travel
 						</span>
@@ -87,10 +88,10 @@ const Blog = ()=>{
 					</div>
 				</div>
 				<div className="flex items-center gap-8 p-8 lg:p-24">
-					<img src="/images/landscape/3.jpg" className="w-1/2 rounded-lg" alt="Tree" />
+					<img src="/images/forest.jpeg" className="w-1/2 rounded-lg" alt="Tree" />
 					<div>
-						<img src="/images/landscape/2.jpg" className="mb-8 rounded-lg" alt="Tree" />
-						<img src="/images/landscape/4.jpg" className="rounded-lg" alt="Tree" />
+						<img src="/images/forest.jpeg" className="mb-8 rounded-lg" alt="Tree" />
+						<img src="/images/frt.jpeg" className="rounded-lg" alt="Tree" />
 					</div>
 				</div>
 			</div></>

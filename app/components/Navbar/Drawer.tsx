@@ -37,7 +37,8 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
                                         src="/images/project logo.png"
                                         alt="Conservation Council Logo"
                                         width={220} // Adjust the width as needed
-                                        height={220} 
+                                        height={220}
+                                        priority
                                         // className=" sm:self-start"
                                        
                                     />
