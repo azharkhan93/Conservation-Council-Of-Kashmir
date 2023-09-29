@@ -135,7 +135,7 @@ const Banner = () => {
         >
 
         
-          <div className="relative h-screen bg-cover " style={{ backgroundImage: "url('/images/home.jpg')" }}>
+          <div className="relative h-screen bg-blue bg-cover " style={{ backgroundImage: "url('/images/home.jpg')" }}>
           <div className="container h-full opacity-50 mx-auto px-4 py-16 md:py-24 lg:py-32">
             {/* Content */}
             <div className="flex h-full items-start md:items-center" style={{ marginTop: '8rem' }}>

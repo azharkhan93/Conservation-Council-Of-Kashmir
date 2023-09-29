@@ -13,30 +13,23 @@ router.post('/join', async (req, res) => {
       pass: 'vnnbhzxsqhbvfcgn',
     },
   });
-  const ownerMailOptions = {
-    from: 'mail from user',
-    to: 'ak305368@gmail.com',
-    subject: 'New User Join Request',
+  const mailOptions = {
+    from: 'azharkhan.work101@gmail.com',
+    to: 'ak305368@gmail.com', 
+    subject: 'New Join Request',
     text: `Name: ${name}\nEmail: ${email}`,
   };
 
-  const userMailOptions = {
-    from: ' conservation council of kahshmir',
-    to: email,
-    subject: 'Welcome to Our Community',
-    text: `Dear ${name},\n\nThank you for joining our community!\n\nBest regards,\nThe Team`,
-  };
-
-  try {
-    await transporter.sendMail(ownerMailOptions); // Send email to owner
-    await transporter.sendMail(userMailOptions);  // Send email to user
-    // await transporter.sendMail(companyMailOptions); // Send email to company
-    res.status(200).json({ message: 'Email sent successfully' });
-    res.status(200).json({ message: 'Details sent successfully' });
-  } catch (error) {
-    console.error('Error sending email:', error);
-    res.status(500).json({ error: 'An error occurred while sending the email' });
-  }
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error('Error sending email:', error);
+      res.status(500).json({ message: 'Error sending email' });
+    } else {
+      console.log('Email sent:', info.response);
+      res.status(200).json({ message: 'Email sent successfully' });
+    }
+  });
+// });
 });
 
 module.exports = router;

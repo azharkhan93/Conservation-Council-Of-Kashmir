@@ -2,6 +2,8 @@
 /* eslint-disable import/no-anonymous-default-export */
 import axios from 'axios';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 const Contact1 = () => {
     const [fullName, setFullName] = useState('');
@@ -51,7 +53,18 @@ const Contact1 = () => {
         try {
             const response = await axios.post('http://localhost:3001/api/submit', formData);
             console.log(response.data.message); // Display success message from the server
-            // Reset the form or show a success message to the user
+            toast.success('Thanks for contacting us, someone from our team will get back to you.', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            });
+            setFullName('');
+            setEmail('');
+            setCompany('');
+            setMessage('');
         } catch (error) {
             console.error('Error submitting form:', error);
             // Handle error, show an error message to the user, etc.
@@ -64,20 +77,20 @@ const Contact1 = () => {
                 <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                     <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
                         <div className="max-w-lg space-y-3">
-                            <h3 className="text-green font-semibold">
-                                Contact
+                            <h3 className="text-green  text-2xl font-semibold">
+                                Contact Us..
                             </h3>
                             <p className="text-green text-3xl font-semibold sm:text-4xl">
                                 Let us know how we can help
                             </p>
-                            <p>
+                            <p className='text-green '>
                                 We’re here to help and answer any question you might have, We look forward to hearing from you! Please fill out the form, or us the contact information bellow .
                             </p>
                             <div>
-                                <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">
+                                <ul className="mt-6 flex  text-green flex-wrap gap-x-10 gap-y-6 items-center">
                                     {contactMethods.map((item, idx) => (
                                         <li key={idx} className="flex items-center gap-x-3">
-                                            <div className="flex-none text-gray-400">
+                                            <div className="flex-none text-green text-gray-400">
                                                 {item.icon}
                                             </div>
                                             <p>{item.contact}</p>
@@ -101,7 +114,7 @@ const Contact1 = () => {
                                         required
                                         value={fullName}
                                         onChange={(e) => setFullName(e.target.value)}
-                                        className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
+                                        className="w-full mt-2 px-3 py-2 text-green bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
                                 </div>
                                 <div>
                                     <label className="font-medium text-green">
@@ -112,7 +125,7 @@ const Contact1 = () => {
                                         required
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
-                                        className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
+                                        className="w-full mt-2 px-3 py-2 text-green bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
                                 </div>
                                 <div>
                                     <label className="font-medium text-green">
@@ -123,7 +136,7 @@ const Contact1 = () => {
                                         required
                                         value={company}
                                         onChange={(e) => setCompany(e.target.value)}
-                                        className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
+                                        className="w-full mt-2 px-3 py-2 text-green bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
                                 </div>
                                 <div>
                                     <label className="font-medium text-green">
@@ -131,7 +144,7 @@ const Contact1 = () => {
                                     </label>
                                     <textarea required
                                         value={message}
-                                        onChange={(e) => setMessage(e.target.value)} className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
+                                        onChange={(e) => setMessage(e.target.value)} className="w-full  bg-green mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
                                 </div>
                                 <button
                                     type="submit"

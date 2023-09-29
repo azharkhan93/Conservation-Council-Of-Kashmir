@@ -106,7 +106,7 @@ export default class MultipleItems extends Component {
 
 
         return (
-            <div className="bg-lightgrey py-20 mt-2">
+            <div className="bg-lightgrey py-20 mt-1">
                 <div className='mx-auto max-w-7xl sm:py-4 lg:px-8 '>
 
                     <div className="text-center">

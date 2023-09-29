@@ -1,9 +1,12 @@
 'use client'
 import React, { useState } from 'react';
 import axios from 'axios';
+import { toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 const Join = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    
 
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
@@ -12,6 +15,14 @@ const Join = () => {
             console.log('User credentials:', { name, email });
             const response = await axios.post('http://localhost:3001/api/join', { name, email });
             console.log(response.data.message); 
+            toast.success('Successfully joined! Thank you for joining.', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            });
 
             setName('');
             setEmail('');
@@ -20,7 +31,7 @@ const Join = () => {
         }
     };
     return (
-        <div className="bg-joinus ">
+        <div className="bg-joinus  py-14">
             <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8'>
 
                 <div className="text-center">
@@ -31,7 +42,7 @@ const Join = () => {
 
                 <div className="mx-auto max-w-4xl pt-5">
                 <form onSubmit={handleSubmit}>
-                    <div className="sm:flex items-center mx-5 p-5 sm:p-0 rounded-xl justify-between bg-lightgrey sm:rounded-full">
+                    <div className="sm:flex items-center mx-5 p-5 sm:p-0 rounded-xl  shadow-lg justify-between bg-lightgrey sm:rounded-full">
                         <div>
                             <input type="name" value= {name} className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:rounded-full bg-lightgrey pl-1 focus:outline-none bg-emailbg focus:text-black" placeholder="Your name" autoComplete="off" onChange={(e) => setName(e.target.value)} />
                         </div>

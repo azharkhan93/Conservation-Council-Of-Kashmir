@@ -41,14 +41,14 @@ const Navbar = () => {
 
                             {/* LOGO */}
 
-                            <div className="flex  items-center border-right">
-                                <Link href="/" className='text-2xl sm:text-4xl font-semibold text-black'>
+                            <div className="flex  items-center  border-right">
+                                <Link href="/" >
                                     {/* <img src="/images/project logo.png" alt="Conservation Council Logo" className="h-8 sm:h-12" /> */}
                                     <Image
-                                    className=" sm:justify-start"
-                                        src="/images/logo.png"
+                                    className=""
+                                        src="/images/project logo.png"
                                         alt="Conservation Council Logo"
-                                        width={250} // Adjust the width as needed
+                                        width={300} // Adjust the width as needed
                                         height={10}
                                         priority
                                         // className=" sm:self-start"

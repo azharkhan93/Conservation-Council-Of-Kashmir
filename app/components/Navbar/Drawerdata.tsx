@@ -11,9 +11,9 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
     { name: 'Home', href: '/', current: true },
     { name: 'AboutUs', href: '/AboutUs', current: false },
-    { name: 'ContactUs', href: '/Contactus', current: false },
+    { name: 'ContactUs', href: '/ContactUs', current: false },
     { name: 'Blog', href: '/Blog', current: false },
-    { name: 'Testimonial', href: '#testimonial-section', current: false },
+   
 ]
 
 function classNames(...classes: string[]) {

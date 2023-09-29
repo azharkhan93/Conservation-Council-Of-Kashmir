@@ -42,7 +42,10 @@ module.exports = {
       'footer' : 'rgba(226, 223, 223, 0.75)',
       'linegrey' : "#C4C4C4",
       'green':      "#38a169",
-      'dark-900': '#2C3E50'
+      'dark': '#2C3E50',
+      'forest' : '#014421',
+      'lacoste' : '#004526',
+      'gradient': '#52c234'
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
