@@ -55,9 +55,7 @@ const Banner = () => {
                     Learn More
                   </button>
       </Link>
-                  {/* <button className="mt-8 bg-green text-white text-lg py-3 px-6 rounded-md font-medium hover:bg-green-50 hover:text-green-600 focus:outline-none focus:bg-green-50">
-                    Learn More
-                  </button> */}
+                  
                 </div>
               </div>
             </div>
