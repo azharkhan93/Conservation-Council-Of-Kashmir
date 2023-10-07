@@ -14,6 +14,7 @@ export default function Home() {
     <main>
       <>
         <Banner />
+        <Beliefs />
        <LatestWork /> 
         <Donateus />
         <Total />
