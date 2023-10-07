@@ -10,9 +10,9 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
     { name: 'Home', href: '/', current: true },
-    { name: 'AboutUs', href: '/AboutUs', current: false },
-    { name: 'ContactUs', href: '/ContactUs', current: false },
-    { name: 'Blog', href: '/Blog', current: false },
+    { name: 'AboutUs', href: '/about-us', current: false },
+    { name: 'ContactUs', href: '/contact-us', current: false },
+    { name: 'OurWork', href: '/our-work', current: false },
    
 ]
 
@@ -25,13 +25,13 @@ const Data = () => {
         <div className="rounded-md max-w-sm w-full mx-auto">
             <div className="flex-1 space-y-4 py-1">
                 <div className="sm:block">
-                    <div className="space-y-1 px-5 pt-2 pb-3">
+                    <div className="space-y-1 px-5 pt-2 pb-6">
                         {navigation.map((item) => (
                             <Link
                                 key={item.name}
                                 href={item.href}
                                 className={classNames(
-                                    item.current ? 'bg-gray-900 text-purple' : 'text-black hover:bg-gray-700 hover:text-purple',
+                                    item.current ? 'bg-white text-purple' : 'text-black hover:bg-gradient hover:text-white',
                                     'block  py-2 rounded-md text-base font-medium'
                                 )}
                                 aria-current={item.current ? 'page' : undefined}
@@ -40,7 +40,7 @@ const Data = () => {
                             </Link>
                         ))}
                         <div className="mt-4"></div>
-                        <button className="bg-green w-full hover:text-white text-white border border-purple font-medium py-2 px-4 rounded">
+                        <button className="bg-green w-full hover:text-white text-white border border-white font-medium py-2 px-4 rounded-lg">
                             Donate Us
                         </button>
                         {/* <Contactusform /> */}

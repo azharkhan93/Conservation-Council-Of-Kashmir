@@ -1,94 +1,138 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+'use client'
+ import React from "react";
+import Slider from "react-slick";
+import Image from "next/image";
 
-interface TeamMember {
+
+interface DataType {
+  profession: string;
   name: string;
-  role: string;
-  image: string;
-  socialMedia: {
-    twitter: string;
-    linkedin: string;
-  };
+  imgSrc: string;
 }
 
+const postData: DataType[] = [
+  {
+    profession: "Founder",
+    name: "Fahad Javaid",
+    imgSrc: "/images/wework/Tabin.jpeg",
+  },
+  {
+    profession: "Co-founder",
+    name: "Tabin Tariq",
+    imgSrc: "/images/wework/Tabin.jpeg",
+  },
+  {
+    profession: "Co-founder",
+    name: "Zaid Qadri",
+    imgSrc: "/images/wework/Tabin.jpeg",
+  },
+  {
+    profession: "Co-founder",
+    name: "Azam Iftikhar",
+    imgSrc: "/images/wework/Tabin.jpeg",
+  },
+  {
+    profession: "Co-founder",
+    name: "King Khan",
+    imgSrc: "/images/wework/Tabin.jpeg",
+  },
+  
+];
+
+
+
 const Team: React.FC = () => {
-  const teamMembers: TeamMember[] = [
-    {
-      name: "John Doe",
-      role: "CEO",
-      image: "/images/pex.jpg",
-      socialMedia: {
-        twitter: "https://twitter.com/johndoe",
-        linkedin: "https://linkedin.com/in/johndoe",
-      },
-    },
-    {
-      name: "Jane Smith",
-      role: "Designer",
-      image: "/images/pex.jpg",
-      socialMedia: {
-        twitter: "https://twitter.com/janesmith",
-        linkedin: "https://linkedin.com/in/janesmith",
-      },
-    },
-    {
-        name: "Jane Smith",
-        role: "Designer",
-        image: "/images/pex.jpg",
-        socialMedia: {
-          twitter: "https://twitter.com/janesmith",
-          linkedin: "https://linkedin.com/in/janesmith",
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    speed: 4000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
         },
       },
       {
-        name: "Jane Smith",
-        role: "Designer",
-        image: "/images/pex.jpg",
-        socialMedia: {
-          twitter: "https://twitter.com/janesmith",
-          linkedin: "https://linkedin.com/in/janesmith",
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
         },
       },
-  ];
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+    ],
+  };
 
   return (
-    <div className="py-20 bg-forest">
-      <div className="xl:container mx-auto px-6 md:px-12">
-        <div className="mb-16 items-center md:w-2/3 lg:w-1/2">
-          <h2 className="mb-4 text-2xl font-bold text-gray-800 dark:text-black md:text-4xl">
-            Tailus blocks leadership
-          </h2>
-          <p className="text-gray-600 dark:text-gray-300">
-            Tailus prides itself not only on award-winning technology but also on the talent of its
-            people—some of the brightest minds and most experienced executives in business.
-          </p>
-        </div>
-        <div className="grid gap-6 px-4 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="group relative rounded-3xl space-y-6 overflow-hidden">
-              <img
-                className="mx-auto h-[26rem] w-full grayscale object-cover object-top transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
-                src={member.image}
-                alt={member.name}
-                loading="lazy"
-                width="640"
-                height="805"
-              />
-              <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-gray-800 dark:bg-green translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0">
-                <div>
-                  <h4 className="text-xl font-semibold dark:text-gray-700 text-white">{member.name}</h4>
-                  <span className="block text-sm text-gray-500">{member.role}</span>
-                </div>
-                <p className="mt-8 text-gray-300 dark:text-gray-600">
-                  Quae labore quia tempora dolor impedit. Possimus, sint ducimus ipsam?
-                </p>
-              </div>
-            </div>
-          ))}
+    <div className="bg-wework overflow-hidden py-20">
+      <div className=" lg:max-w-7xl sm:py-4 lg:px-8">
+        <div className="text-center">
+          <h3 className="text-3xl sm:text-6xl font-bold text-gradient">
+            Meet Our Team.
+          </h3>
+          <h3 className="text-4xl sm:text-6xl font-bold text-gradient opacity-50 lg:mr-48 my-2">
+            We work in several verticals.
+          </h3>
+          <h3 className="text-4xl sm:text-6xl font-bold text-gradient opacity-25 lg:-mr-32 my-2">
+            We work in several verticals.
+          </h3>
         </div>
       </div>
+
+      <Slider {...settings}>
+        {postData.map((items, i) => (
+          <div key={i}>
+            <div className="bg-white m-3 py-14 my-10 text-center shadow-xl rounded-3xl">
+              <div className="relative border-green">
+              
+                <Image
+                  src={items.imgSrc}
+                  alt="gaby"
+                  width={150}
+                  height={100}
+                  className="inline-block border-lg m-auto rounded-full"
+                />
+                <Image
+                  src={"/images/wework/linkedin.svg"}
+                  alt="greenbg"
+                  width={100}
+                  height={100}
+                  className=" absolute inline-block position-linkedin"
+                />
+              </div>
+              
+              <h4 className="text-4xl font-bold pt-14 text text-gradient">{items.name}</h4>
+              <h3 className="text-2xl font-normal pt-4 pb-2 opacity-50 text-gradient">
+                {items.profession}
+              </h3>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };
 
 export default Team;
+

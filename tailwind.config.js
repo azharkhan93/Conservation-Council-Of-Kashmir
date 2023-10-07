@@ -10,7 +10,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'sm': '460px',
+      'sm': '640px',
       'md': '768px',
       'lg': '1150px',
       'xl': '1280px',
@@ -19,6 +19,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      
       'white': '#ffffff',
       'black': '#000000',
       'blue': '#0066FF',
@@ -45,7 +46,9 @@ module.exports = {
       'dark': '#2C3E50',
       'forest' : '#014421',
       'lacoste' : '#004526',
-      'gradient': '#52c234'
+      'gradient': '#52c234',
+      'grass' : '#40826D'
+      
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

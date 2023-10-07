@@ -58,10 +58,12 @@ const Total = () => {
       className="xl:px-20 px-2 py-20 xl:mx-auto xl:container"
     >
       <h1 className="xl:text-5xl md:text-4xl text-2xl font-semibold leading-tight text-center text-green sm:mb-0 mb-12">
-        More Than 10 Years We Provide Service
-        <br className="md:block hidden text-green" />
-        in Real State Industry
-      </h1>
+    Environmental Impact Dashboard
+    {/* <br className="md:block hidden text-green" />
+    in Real Estate Industry */}
+    <span className="block mt-4 text-2xl text-gray-600">Achieving Remarkable Results in Less Than a Year</span>
+</h1>
+
       <div className="md:mt-14 mt-4 relative sm:flex items-center justify-center">
         <img
           src="https://i.ibb.co/KjrPCyW/map.png"
@@ -74,22 +76,22 @@ const Total = () => {
           className="sm:hidden -mt-10 block w-full h-96 object-cover absolute z-0"
         />
         <div className="shadow-lg xl:p-6 p-4 sm:w-auto w-full bg-white sm:absolute relative  sm:mt-0 mt-4 left-0 xl:ml-56 sm:ml-12 xl:-mt-40">
-          <p className="text-3xl font-semibold text-gray-800 counter-value text-green" data-value={20000}>
+          <p className="text-3xl font-semibold text-gray-800 counter-value text-gradient" data-value={500}>
             0
           </p>
           <p className="text-base leading-4 xl:mt-4 mt-2 text-green ">Trees Planted By Us</p>
         </div>
-        <div className="shadow-lg xl:p-6 p-4 w-48 sm:w-auto bg-white sm:absolute relative   mt-4 xl:mt-80 sm:mt-56 xl:-ml-0 sm:-ml-12">
-          <p className="text-3xl font-semibold text-gray-800 counter-value text-green" data-value={8000}>
+        <div className="shadow-lg xl:p-6 p-4 w-full sm:w-auto bg-white sm:absolute relative   mt-4 xl:mt-80 sm:mt-56 xl:-ml-0 sm:-ml-12">
+          <p className="text-3xl font-semibold text-gradient counter-value " data-value={5}>
             0
           </p>
-          <p className="text-base leading-4 xl:mt-4 mt-2 text-green">Animals Saved By Us</p>
+          <p className="text-base leading-4 xl:mt-4 mt-2 text-green">Clenups Conducted By Us</p>
         </div>
         <div className="shadow-lg xl:p-6 p-4 sm:w-auto w-full bg-white sm:absolute relative  md:mt-0 sm:-mt-5 mt-4 right-0 xl:mr-56sm:mr-24">
-          <p className="text-3xl font-semibold text-gray-800 counter-value text-green" data-value={15000}>
+          <p className="text-3xl font-semibold text-gray-800 counter-value text-gradient" data-value={6}>
             0
           </p>
-          <p className="text-base leading-4 xl:mt-4 mt-2 text-green">Recently Saved Animals</p>
+          <p className="text-base leading-4 xl:mt-4 mt-2 text-green">Volunteers Engaged With us</p>
         </div>
       </div>
     </div>

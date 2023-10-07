@@ -2,11 +2,12 @@
 "use client"
 import { Disclosure } from '@headlessui/react';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Contactusform from './Contactus';
+
 import Image from 'next/image';
 
 interface NavigationItem {
@@ -16,11 +17,11 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    // { name: 'Home', href: '/', current: false },
+
     { name: 'Home', href: '/', current: false },
-    { name: 'AboutUs', href: '/AboutUs', current: false },
-    { name: 'ContactUs', href: '/ContactUs', current: false },
-    { name: 'OurWork', href: '/Blog', current: false },
+    { name: 'AboutUs', href: '/about-us', current: false },
+    { name: 'ContactUs', href: '/contact-us', current: false },
+    { name: 'OurWork', href: '/our-work', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -29,36 +30,33 @@ function classNames(...classes: string[]) {
 
 const Navbar = () => {
 
+
+
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
         <Disclosure as="nav" className="navbar">
-        
+
             <>
                 <div className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8">
                     <div className="relative flex h-14 sm:h-20 items-center">
                         <div className="flex flex-1 items-center sm:justify-between">
 
-                            {/* LOGO */}
 
-                            <div className="flex  items-center  border-right">
-                                <Link href="/" >
-                                    {/* <img src="/images/project logo.png" alt="Conservation Council Logo" className="h-8 sm:h-12" /> */}
+
+                            <div className="flex items-center  lg:justify-start border-right sm:justify-start ">
+                                <Link href="/">
                                     <Image
-                                    className=""
+
                                         src="/images/project logo.png"
                                         alt="Conservation Council Logo"
-                                        width={300} // Adjust the width as needed
+                                        width={300}
                                         height={10}
                                         priority
-                                        // className=" sm:self-start"
-                                    />
 
+                                    />
                                 </Link>
                             </div>
-
-                            {/* LINKS */}
-
                             <div className="hidden lg:flex items-center border-right ">
                                 <div className="flex justify-end space-x-4">
                                     {navigation.map((item) => (
@@ -66,7 +64,7 @@ const Navbar = () => {
                                             key={item.name}
                                             href={item.href}
                                             className={classNames(
-                                                item.current ? 'bg-gray-900' : 'navlinks hover:text-green',
+                                                item.current ? 'bg-lacoste' : 'navlinks hover:text-green',
                                                 'px-3 py-4 rounded-md text-lg font-normal'
                                             )}
                                             aria-current={item.href ? 'page' : undefined}
@@ -77,21 +75,20 @@ const Navbar = () => {
                                 </div>
 
                             </div>
-                            {/* <button className='hidden lg:flex justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white'>Contact us</button> */}
+
+
                             <Contactusform />
+
+
                         </div>
-
-
                         {/* DRAWER FOR MOBILE VIEW */}
 
                         {/* DRAWER ICON */}
-
                         <div className='block lg:hidden'>
                             <Bars3Icon className="block h-6 w-6" aria-hidden="true" onClick={() => setIsOpen(true)} />
                         </div>
 
                         {/* DRAWER LINKS DATA */}
-
                         <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
                             <Drawerdata />
                         </Drawer>
@@ -100,7 +97,7 @@ const Navbar = () => {
                 </div>
             </>
         </Disclosure>
-        
+
     )
 }
 

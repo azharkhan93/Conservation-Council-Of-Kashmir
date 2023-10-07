@@ -33,13 +33,13 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
 
                         <div className="flex flex-shrink-0 items-center border-right">
                             <Link href="/" className='text-2xl font-semibold text-black'>
-                            <Image        className="mt-4"
+                            <Image        className="mt-4  md:ml-4 lg:ml-0"
                                         src="/images/project logo.png"
                                         alt="Conservation Council Logo"
-                                        width={220} // Adjust the width as needed
+                                        width={220} 
                                         height={220}
                                         priority
-                                        // className=" sm:self-start"
+                                        
                                        
                                     />
                             </Link>

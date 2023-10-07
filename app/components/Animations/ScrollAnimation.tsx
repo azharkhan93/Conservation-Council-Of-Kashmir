@@ -1,20 +1,13 @@
 'use client'
 import React, { ReactNode } from 'react';
 import { motion } from 'framer-motion';
-//  import { useInView } from 'react-intersection-observer';
  interface ScrollAnimationProps {
   children: ReactNode;
   className?: string; 
   variants: any;
 }
-
-
-
-
 const ScrollAnimation: React.FC<ScrollAnimationProps> = ({children, className, ...props}) => {
-  
-    
-  return (
+return (
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
