@@ -50,7 +50,7 @@ const Navbar = () => {
 
                                         src="/images/Logo.png"
                                         alt="Conservation Council Logo"
-                                        width={300}
+                                        width={230}
                                         height={10}
                                         priority
 

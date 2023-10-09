@@ -1,4 +1,4 @@
-// _document.tsx
+
 
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
 
@@ -9,7 +9,7 @@ class MyDocument extends Document {
         <Head />
         <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <link rel="icon" href="/images/project logo.png" />
+          <link rel="icon" href="/images/Logo.png" />
           <title>Conservation Council Of kashmir</title>
         <body>
           <Main />
