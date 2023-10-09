@@ -48,7 +48,7 @@ const Navbar = () => {
                                 <Link href="/">
                                     <Image
 
-                                        src="/images/project logo.png"
+                                        src="/images/Logo.png"
                                         alt="Conservation Council Logo"
                                         width={300}
                                         height={10}

@@ -34,7 +34,7 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
                         <div className="flex flex-shrink-0 items-center border-right">
                             <Link href="/" className='text-2xl font-semibold text-black'>
                             <Image        className="mt-4  md:ml-4 lg:ml-0"
-                                        src="/images/project logo.png"
+                                        src="/images/Logo.png"
                                         alt="Conservation Council Logo"
                                         width={220} 
                                         height={220}
