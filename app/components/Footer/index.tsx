@@ -38,7 +38,7 @@ const Footer = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("images/footer.jpg")',
+            backgroundImage: 'url("images/footer/footer.jpg")',
           }}
         ></div>
 
@@ -49,7 +49,7 @@ const Footer = () => {
           <div className="relative mt-14 sm:mt-0 px-5 flex flex-col justify-center items-center text-gray-500">
 
             <Link href="/">
-              <Image className='mt-5  sm:mt-0' src="/images/project logo.png"
+              <Image className='mt-5  sm:mt-0' src="/images/footer/project logo.png"
                 alt="Conservation Council Logo" width={350} height={350} priority
                 style={{ margin: '0' }} />
             </Link>

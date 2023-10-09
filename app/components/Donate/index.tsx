@@ -29,7 +29,7 @@ const Donateus = () => {
           <div
             className="bg-cover bg-center bg-no-repeat py-24 md:py-32 relative"
             style={{
-              backgroundImage: `url('/images/Azam3.jpg')`,
+              backgroundImage: `url('/images/donate/Azam3.jpg')`,
             }}
           >
             <div className="container mx-auto py-12 px-4">

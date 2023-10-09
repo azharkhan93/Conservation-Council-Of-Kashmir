@@ -15,27 +15,27 @@ const postData: DataType[] = [
   {
     profession: "Founder",
     name: "Fahad Javaid",
-    imgSrc: "/images/wework/Tabin.jpeg",
+    imgSrc: "/images/team/Tabin.jpeg",
   },
   {
     profession: "Co-founder",
     name: "Tabin Tariq",
-    imgSrc: "/images/wework/Tabin.jpeg",
+    imgSrc: "/images/team/Tabin.jpeg",
   },
   {
     profession: "Co-founder",
     name: "Zaid Qadri",
-    imgSrc: "/images/wework/Tabin.jpeg",
+    imgSrc: "/images/team/Tabin.jpeg",
   },
   {
     profession: "Co-founder",
     name: "Azam Iftikhar",
-    imgSrc: "/images/wework/Tabin.jpeg",
+    imgSrc: "/images/team/Tabin.jpeg",
   },
   {
     profession: "Co-founder",
     name: "King Khan",
-    imgSrc: "/images/wework/Tabin.jpeg",
+    imgSrc: "/images/team/Tabin.jpeg",
   },
   
 ];

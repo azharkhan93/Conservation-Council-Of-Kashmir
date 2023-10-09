@@ -15,7 +15,7 @@ const About = () => {
         <div
           className="absolute inset-0 bg-opacity-50 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("/images/Azam1.jpg")',
+            backgroundImage: 'url("/images/aboutus/Azam1.jpg")',
 
             backgroundSize: 'cover',
           }} />
@@ -27,7 +27,7 @@ const About = () => {
           <div
             className="w-full bg-white py-10 p-8 mt-4 mb-8 rounded-lg shadow-lg text-center"
             style={{
-              backgroundImage: `url('/images/Azam8.jpg')`,
+              backgroundImage: `url('/images/aboutus/Azam33.jpg')`,
               backgroundSize: 'cover',
             }}
           >
@@ -38,12 +38,6 @@ const About = () => {
               Nature enthusiasts and conservationists as we embark on a journey to protect and preserve the natural wonders of Kashmir.
             </p>
           </div>
-
-
-
-
-
-
           <div className="mt-10 md:mt-0 md:flex">
 
             <div className="md:w-1/2 text-white mt-3">
@@ -61,7 +55,7 @@ const About = () => {
 
               <img
                 className="hidden md:block w-full mt-10 h-auto sm:mt-4 rounded-lg shadow-lg"
-                src="/images/ser.jpg"
+                src="/images/aboutus/ser.jpg"
                 alt="About Us Image"
               />
             </div>
@@ -69,7 +63,7 @@ const About = () => {
 
         </div>
         <div className="flex    opacity-80 flex-col rounded-md shadow-lg lg:flex-row" >
-          <img src="images/land.jpeg" alt="" className="h-80 rounded-lg shadow-lg mt-6 dark:bg-gray-500 aspect-video" />
+          <img src="images/aboutus/land.jpeg" alt="" className="h-80 rounded-lg shadow-lg mt-6 dark:bg-gray-500 aspect-video" />
 
           <div className="flex flex-col justify-center   flex-1 p-6 ">
 

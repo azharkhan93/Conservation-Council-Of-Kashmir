@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import Link from "next/link";
 
 const Banner = () => {
-  const images = ["/images/Azam15.jpg", "/images/Azam8.jpg", "/images/Azam11.jpg"];
+  const images = ["/images/banner/Azam15.jpg", "/images/banner/Azam8.jpg", "/images/banner/Azam51.jpg"];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -40,7 +40,7 @@ const Banner = () => {
             zIndex: currentIndex === 0 ? 1 : 0,
           }}
         >
-          <div className="relative h-screen bg-cover" style={{ backgroundImage: "url('/images/Azam15.jpg')" }}>
+          <div className="relative h-screen bg-cover" style={{ backgroundImage: "url('/images/banner/Azam15.jpg')" }}>
             <div className="container h-full mx-auto px-4 py-16 md:py-24 lg:py-32">
               <div className="flex h-full items-start md:items-center" style={{ marginTop: '8rem' }}>
                 <div className="md:w-1/2 mt-8 md:mt-0 sm:mt-9 text-center sm:text-left">
@@ -73,7 +73,7 @@ const Banner = () => {
 
           }}
         >
-          <div className="relative h-screen t bg-cover " style={{ backgroundImage: "url('/images/Azam8.jpg')" }}>
+          <div className="relative h-screen t bg-cover " style={{ backgroundImage: "url('/images/banner/Azam8.jpg')" }}>
             <div className="container h-full opacity-80 mx-auto px-4 py-16 md:py-24 lg:py-32">
               <div className="flex h-full items-start md:items-center sm:center" style={{ marginTop: '8rem' }}>
                 <div className="md:w-1/2 sm:mt-9 text-center sm:text-left">
@@ -102,7 +102,7 @@ const Banner = () => {
             zIndex: currentIndex === 0 ? 1 : 0,
           }}
         >
-          <div className="relative h-screen t bg-cover " style={{ backgroundImage: "url('/images/Azam11.jpg')" }}>
+          <div className="relative h-screen t bg-cover " style={{ backgroundImage: "url('/images/banner/Azam51.jpg')" }}>
             <div className="container h-full opacity-80 mx-auto px-4 py-16 md:py-24 lg:py-32">
               <div className="flex h-full items-start md:items-center sm:center" style={{ marginTop: '8rem' }}>
                 <div className="md:w-1/2 sm:mt-9 text-center sm:text-left">
