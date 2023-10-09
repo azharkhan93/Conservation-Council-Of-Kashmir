@@ -39,7 +39,7 @@ const Navbar = () => {
 
             <>
                 <div className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8">
-                    <div className="relative flex h-14 sm:h-20 items-center">
+                    <div className="relative flex h-14 sm:h-15 items-center">
                         <div className="flex flex-1 items-center sm:justify-between">
 
 
