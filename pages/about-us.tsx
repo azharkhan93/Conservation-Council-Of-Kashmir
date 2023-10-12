@@ -32,7 +32,7 @@ const About = () => {
             }}
           >
             <h2 className="lg:text-2xl font-semibold sm:text-1xl text-green">
-              Embrace the <span className='text-gradient lg:text-3xl text-2xl'>Beauty of Nature </span>with Us
+              Embrace the beauty of nature with us
             </h2>
             <p className="text-l mt-4 lg:text-lg text-white">
               Nature enthusiasts and conservationists as we embark on a journey to protect and preserve the natural wonders of Kashmir.
@@ -51,10 +51,10 @@ const About = () => {
 
             </div>
 
-            <div className="md:w-1/2 mt-7 md:ml-4">
+            <div className="md:w-1/2 mt-7 md:ml-4 ">
 
               <img
-                className="hidden md:block w-full mt-10 h-auto sm:mt-4 rounded-lg shadow-lg"
+                className="hidden md:block w-full mt-11 h-auto sm:mt-4 rounded-lg shadow-lg ml-11 "
                 src="/images/aboutus/ser.jpg"
                 alt="About Us Image"
               />

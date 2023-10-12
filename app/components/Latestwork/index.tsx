@@ -14,12 +14,26 @@ interface DataType {
 
 const postData: DataType[] = [
   {
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon uuiuhdhshj",
-    date: "August 19, 2021",
-    imgSrc: "/images/latestwork/pex.jpg",
+    heading: "Cleanup drive",
+    heading2: "Dara, Srinagar",
+    name: "Removal of litter, debris and installation of bins.",
+    date: "October 15, 2023",
+    imgSrc: "/images/latestwork/Azam35.jpg",
   },
+  {
+    heading: "Cleanup drive",
+    heading2: "Yusmarg, Budgam",
+    name: "Removal of litter and debris. ",
+    date: "October 29, 2023",
+    imgSrc: "/images/latestwork/Azam7.jpg",
+  },
+  {
+    heading: "Plastic bad reduction drive",
+    heading2: "Harwan, Srinagar",
+    name: "Distribution of reusable bags.Distribution of ",
+    date: "November 5, 2023",
+    imgSrc: "/images/latestwork/plastic.jpeg",
+  },/*
   {
     heading: "We Launch Delia",
     heading2: "Webflow this Week!",
@@ -33,21 +47,7 @@ const postData: DataType[] = [
     name: "Published on Startupon uuiuhdhshj",
     date: "August 19, 2021",
     imgSrc: "/images/latestwork/pex.jpg",
-  },
-  {
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon uuiuhdhshj",
-    date: "August 19, 2021",
-    imgSrc: "/images/latestwork/pex.jpg",
-  },
-  {
-    heading: "We Launch Delia",
-    heading2: "Webflow this Week!",
-    name: "Published on Startupon uuiuhdhshj",
-    date: "August 19, 2021",
-    imgSrc: "/images/latestwork/pex.jpg",
-  },
+  },*/
   
 ];
 
@@ -85,8 +85,8 @@ const MultipleItems: React.FC = () => {
     <div className="bg-lightgrey py-20 ">
       <div className="mx-auto max-w-7xl sm:py-4 lg:px-8">
         <div className="text-center">
-          <h3 className="text-4xl text-green sm:text-6xl font-bold mb-2">
-            Our latest Work..
+          <h3 className="text-3xl text-green sm:text-5xl font-bold mb-2">
+            Our upcoming initiatives..
           </h3>
         </div>
         <Slider {...settings}>

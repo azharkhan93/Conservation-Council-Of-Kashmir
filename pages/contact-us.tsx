@@ -105,7 +105,7 @@ const Contact1 = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="flex-1 sm:max-w-lg lg:max-w-md">
+                        <div className="flex-1 sm:max-w-lg lg:max-w-md sm:mt-0 mt-4">
                             <form
                                 onSubmit={handleSubmit}
 

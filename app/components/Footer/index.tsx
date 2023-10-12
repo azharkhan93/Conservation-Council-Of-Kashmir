@@ -85,7 +85,9 @@ const Footer = () => {
                   </svg>
                 </a>
               </span>
-              <span className="py-4 lg:text-l mt-3 text-white text-sm">&copy;2023, Conservation Council Of Kashmir All Rights Reserved.</span>
+              
+
+              <span className="py-4 lg:text-l mt-3 text-white text-sm ">&copy;2023, Conservation Council Of Kashmir All Rights Reserved.</span>
             </div>
             <span className="sm:hidden absolute bg-black  -top-4 left-1/2 w-1/4 h-px bg-gray-400 transform -translate-x-1/2" aria-hidden="true" />
           </div>

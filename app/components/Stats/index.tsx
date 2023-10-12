@@ -75,8 +75,7 @@ const Total = () => {
     >
       <h1 className="xl:text-5xl md:text-4xl text-2xl font-semibold leading-tight text-center text-green sm:mb-0 mb-12">
     Environmental Impact Dashboard
-    {/* <br className="md:block hidden text-green" />
-    in Real Estate Industry */}
+    
     <span className="block mt-4 text-2xl text-gray-600">Achieving Remarkable Results in Less Than a Year</span>
 </h1>
 

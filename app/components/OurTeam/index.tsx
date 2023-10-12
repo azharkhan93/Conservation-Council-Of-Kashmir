@@ -15,27 +15,27 @@ const postData: DataType[] = [
   {
     profession: "Founder",
     name: "Fahad Javaid",
-    imgSrc: "/images/team/Tabin.jpeg",
+    imgSrc: "/images/team/fahad.jpeg",
   },
   {
-    profession: "Co-founder",
+    profession: "Media Secretary",
     name: "Tabin Tariq",
     imgSrc: "/images/team/Tabin.jpeg",
   },
   {
-    profession: "Co-founder",
-    name: "Zaid Qadri",
-    imgSrc: "/images/team/Tabin.jpeg",
+    profession: "Treasurer",
+    name: "Zaid Mushtaq",
+    imgSrc: "/images/team/Zaid.jpeg",
   },
   {
-    profession: "Co-founder",
+    profession: "General Secretary",
     name: "Azam Iftikhar",
-    imgSrc: "/images/team/Tabin.jpeg",
+    imgSrc: "/images/team/Azam.jpeg",
   },
   {
     profession: "Co-founder",
-    name: "King Khan",
-    imgSrc: "/images/team/Tabin.jpeg",
+    name: "Azhar Khan",
+    imgSrc: "/images/team/Azhar.jpeg",
   },
   
 ];
@@ -46,12 +46,12 @@ const Team: React.FC = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 2000,
+    speed: 3000,
+    autoplaySpeed: 1500,
     cssEase: "linear",
     responsive: [
       {
@@ -94,7 +94,7 @@ const Team: React.FC = () => {
           <h3 className="text-4xl sm:text-6xl font-bold text-gradient opacity-50 lg:mr-48 my-2">
             We work in several verticals.
           </h3>
-          <h3 className="text-4xl sm:text-6xl font-bold text-gradient opacity-25 lg:-mr-32 my-2">
+          <h3 className="text-4xl sm:text-6xl font-bold text-gradient opacity-50 lg:-mr-32 my-2">
             We work in several verticals.
           </h3>
         </div>
@@ -108,14 +108,14 @@ const Team: React.FC = () => {
               
                 <Image
                   src={items.imgSrc}
-                  alt="gaby"
+                  alt="team image"
                   width={150}
                   height={100}
                   className="inline-block border-lg m-auto rounded-full"
                 />
                 <Image
-                  src={"/images/wework/linkedin.svg"}
-                  alt="greenbg"
+                  src={"/images/team/linkedin.svg"}
+                  alt="linkdin"
                   width={100}
                   height={100}
                   className=" absolute inline-block position-linkedin"
