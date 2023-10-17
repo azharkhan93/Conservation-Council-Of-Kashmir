@@ -35,9 +35,9 @@ const Join = () => {
             <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8'>
 
                 <div className="text-center">
-                    <h3 className="text-offwhite text-lg font-normal tracking-widest">JOIN US..</h3>
-                    <h2 className=" text-green text-4xl sm:text-6xl font-bold my-6 leading-10"> Join Hands for a Greener, Cleaner World.</h2>
-                    <p className="text-offwhite text-base font-normal">At the Council, we believe in the power of unity and collective action. Our mission is simple yet profound: to create a greener, cleaner world for ourselves and future generations</p>
+                    <h3 className="text-white text-lg font-normal tracking-widest">JOIN US..</h3>
+                    <h2 className=" text-gradient text-4xl sm:text-6xl font-bold my-6 leading-10"> Join Hands for a Greener, Cleaner World.</h2>
+                    <p className="text-white text-base font-normal">At the Council, we believe in the power of unity and collective action. Our mission is simple yet profound: to create a greener, cleaner world for ourselves and future generations</p>
                 </div>
 
                 <div className="mx-auto max-w-4xl mt-5 pt-5">

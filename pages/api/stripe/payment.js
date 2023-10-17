@@ -1,6 +1,6 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method === 'POST') {
     try {
       console.log('Received request with body:', req.body);
@@ -16,7 +16,7 @@ module.exports = async function handler(req, res) {
         line_items: [
           {
             price_data: {
-              currency: 'usd',
+              currency: 'inr',
               product_data: {
                 name: 'Donations for website',
               },

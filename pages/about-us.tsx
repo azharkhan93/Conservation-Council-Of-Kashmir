@@ -27,11 +27,11 @@ const About = () => {
           <div
             className="w-full bg-white py-10 p-8 mt-4 mb-8 rounded-lg shadow-lg text-center"
             style={{
-              backgroundImage: `url('/images/aboutus/Azam33.jpg')`,
+              backgroundImage: `url('/images/aboutus/Azam57.jpg')`,
               backgroundSize: 'cover',
             }}
           >
-            <h2 className="lg:text-2xl font-semibold sm:text-1xl text-green">
+            <h2 className="lg:text-2xl font-semibold sm:text-1xl text-gradient">
               Embrace the beauty of nature with us
             </h2>
             <p className="text-l mt-4 lg:text-lg text-white">
@@ -74,7 +74,7 @@ const About = () => {
               type="button"
               className="self-start text-white bg-forest px-4 py-3 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400"
             >
-              Action with us
+              Take Action with us
             </button>
 
           </div>

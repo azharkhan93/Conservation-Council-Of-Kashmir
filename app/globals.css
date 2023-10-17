@@ -163,13 +163,13 @@ html {
 }
 
 .bg-wework {
-  background-image: url('/images/wework/elipse.svg'), url('/images/wework/vector.svg');
+  background-image: url('/images/team/elipse.svg'), url('/images/team/vector.svg');
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, top right;
 }
 
 .bg-featured {
-  background-image: url('/images/wework/vector.svg');
+  background-image: url('/images/team/vector.svg');
   background-repeat: no-repeat;
   background-position: 100% 35%;
 }

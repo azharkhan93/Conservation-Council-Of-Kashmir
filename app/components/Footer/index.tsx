@@ -128,7 +128,7 @@ const Footer = () => {
         </div>
         <div
           onClick={scrollToTop}
-          className={`fixed bottom-4 right-4 h-14 w-14 cursor-pointer shadow-lg shadow-[#671AE4]/40 rounded-full bg-gradient-to-b  text-white font-bold from-[#B75CFF] to-[#671AE4] mx-auto flex justify-center items-center ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          className={` bg-gradient fixed bottom-4 right-4 h-14 w-14 cursor-pointer shadow-lg shadow-[#671AE4]/40 rounded-full bg-gradient-to-b  text-white font-bold from-[#52c234] to-[#671AE4] mx-auto flex justify-center items-center ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
             } transition-opacity duration-300`}
         >
           UP
