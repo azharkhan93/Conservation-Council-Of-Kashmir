@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 // eslint-disable-next-line react/no-unescaped-entities
+/* eslint-disable react/no-unescaped-entities */
+// eslint-disable-next-line react/no-unescaped-entities
 'use client'
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
@@ -31,7 +33,9 @@ const Banner = () => {
 
   return (
     <div className="relative h-100 ">
+      {/* @ts-ignore */}
       <Slider {...settings}>
+        
 
         <div
           className="relative h-screen bg-cover"

@@ -54,7 +54,7 @@ const About = () => {
             <div className="md:w-1/2 mt-7 md:ml-4 ">
 
               <img
-                className="hidden md:block w-full mt-11 h-auto sm:mt-4 rounded-lg shadow-lg ml-11 "
+                className="hidden md:block w-full mt-11 h-auto sm:mt-4 rounded-lg shadow-lg ml-6 "
                 src="/images/aboutus/ser.jpg"
                 alt="About Us Image"
               />

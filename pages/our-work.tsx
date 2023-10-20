@@ -6,12 +6,12 @@ import DonateButton2 from '../app/components/DonateUsbtn2'
 import { ScrollAnimation, getScrollAnimation } from "../app/components/Animations/ScrollAnimation";
 import { useEffect, useState } from 'react';
 const Blog = ()=>{
-	const [animationVariants, setAnimationVariants] = useState<any>(null);
+// 	const [animationVariants, setAnimationVariants] = useState<any>(null);
 
-  useEffect(() => {
-    const variants = getScrollAnimation();
-    setAnimationVariants(variants);
-  }, []);
+//   useEffect(() => {
+//     const variants = getScrollAnimation();
+//     setAnimationVariants(variants);
+//   }, []);
     return (
 		<>
 		
@@ -26,8 +26,7 @@ const Blog = ()=>{
           </p>
         </div>
 			<div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
-			{animationVariants && (
-          <ScrollAnimation variants={animationVariants}>
+			
 				<span rel="noopener noreferrer"  className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
 					<img src="images/ourwork/Azam37.jpg" alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 					<div className="p-6 space-y-2 lg:col-span-5">
@@ -36,11 +35,9 @@ const Blog = ()=>{
 						<p>In Kashmir, we actively contribute to tree plantation initiatives, striving to plant thousands of trees each year. We're committed to combating deforestation, enhancing sustainability, and preserving the region's natural beauty. Our dedicated efforts involve engaging with local communities, educating the youth about environmental conservation, and collaborating with like-minded organizations to ensure a greener and more prosperous future for Kashmir and its inhabitants.</p>
 					</div>
 				</span>
-				</ScrollAnimation>
-                )}
+				
 				<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-					{animationVariants && (
-          <ScrollAnimation variants={animationVariants}>
+					
 					<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
 						<img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="images/ourwork/Azam40.jpg" />
 						<div className="p-6 space-y-2">
@@ -49,8 +46,7 @@ const Blog = ()=>{
 							<p>Our focus lies in waste reduction. We educate communities on responsible consumption and recycling practices, working to safeguard the pristine surroundings of this region.</p>
 						</div>
 					</a>
-					 </ScrollAnimation>
-                )}
+					
 				<span rel="noopener noreferrer"  className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
 						<img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="images/ourwork/Azam44.jpg" />
 						<div className="p-6 space-y-2">

@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
     <Layout>
+      {/* @ts-ignore */}
         <Component {...pageProps} />
         <ToastContainer />
       </Layout>
