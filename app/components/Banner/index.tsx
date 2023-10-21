@@ -33,10 +33,7 @@ const Banner = () => {
 
   return (
     <div className="relative h-100 ">
-      {/* @ts-ignore */}
-      <Slider {...settings}>
-        
-
+    <Slider {...settings}>
         <div
           className="relative h-screen bg-cover"
           style={{

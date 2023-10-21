@@ -89,7 +89,6 @@ const MultipleItems: React.FC = () => {
             Our upcoming initiatives..
           </h3>
         </div>
-        {/* @ts-ignore */}
         <Slider {...settings}>
           {postData.map((items, i) => (
             <div key={i}>
@@ -101,9 +100,6 @@ const MultipleItems: React.FC = () => {
                   height={262}
                   className="inline-block rounded-lg m-auto"
                 />
-                <Link href="/">
-                  
-                </Link>
                 <h4 className="text-2xl font-bold pt-6 text-green">
                   {items.heading}
                 </h4>
@@ -120,7 +116,7 @@ const MultipleItems: React.FC = () => {
                 </div>
               </div>
             </div>
-          ))} as ReactNode
+          ))} 
         </Slider>
       </div>
     </div>

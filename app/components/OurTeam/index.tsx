@@ -83,33 +83,8 @@ const Team: React.FC = () => {
       },
     ],
   };
-  const sliderChildren = postData.map((items, i) => (
-    <div key={i}>
-      <div className="bg-white m-3 py-14 my-10 text-center shadow-xl rounded-3xl">
-        <div className="relative border-green">
-          <Image
-            src={items.imgSrc}
-            alt="team image"
-            width={150}
-            height={100}
-            className="inline-block border-lg m-auto rounded-full"
-          />
-          <Image
-            src={"/images/team/linkedin.svg"}
-            alt="linkedin"
-            width={100}
-            height={100}
-            className="absolute inline-block position-linkedin"
-          />
-        </div>
-        <h4 className="text-4xl font-bold pt-14 text text-gradient">{items.name}</h4>
-        <h3 className="text-2xl font-normal pt-4 pb-2 text-gradient">
-          {items.profession}
-        </h3>
-      </div>
-    </div>
-  )) as React.ReactNode;
 
+  
   return (
     <div className="bg-wework overflow-hidden py-20">
       <div className=" lg:max-w-7xl sm:py-4 lg:px-8">
@@ -125,9 +100,7 @@ const Team: React.FC = () => {
           </h3>
         </div>
       </div>
-      <>
-      {/* @ts-ignore */}
-         <Slider {...settings}>
+      <Slider {...settings}>
         {postData.map((items, i) => (
           <div key={i}>
             <div className="bg-white m-3 py-14 my-10 text-center shadow-xl rounded-3xl">
@@ -155,9 +128,9 @@ const Team: React.FC = () => {
               </h3>
             </div>
           </div>
-        ))} as ReactNode
+        ))} 
       </Slider>
-      </>
+      
     </div>
   );
 };
