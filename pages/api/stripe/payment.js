@@ -18,9 +18,9 @@ export default async function handler(req, res) {
             price_data: {
               currency: 'inr',
               product_data: {
-                name: 'Donations for website',
+                name: 'Donations for Conservation Council Of Kashmir',
               },
-              unit_amount: amount * 1000, 
+              unit_amount: amount * 100, 
             },
             quantity: 1,
           },

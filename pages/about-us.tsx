@@ -25,13 +25,13 @@ const About = () => {
 
         <div className="container mx-auto pt-16 pb-32 px-4 relative z-1">
           <div
-            className="w-full bg-white py-10 p-8 mt-4 mb-8 rounded-lg shadow-lg text-center"
-            style={{
-              backgroundImage: `url('/images/aboutus/Azam57.jpg')`,
-              backgroundSize: 'cover',
-            }}
+            className="w-full bg-green py-10 p-8 mt-4 mb-8 rounded-lg shadow-lg text-center"
+            // style={{
+            //   backgroundImage: `url('/images/aboutus/Azam57.jpg')`,
+            //   backgroundSize: 'cover',
+            // }}
           >
-            <h2 className="lg:text-2xl font-semibold sm:text-1xl text-gradient">
+            <h2 className="lg:text-2xl font-semibold sm:text-1xl text-white">
               Embrace the beauty of nature with us
             </h2>
             <p className="text-l mt-4 lg:text-lg text-white">

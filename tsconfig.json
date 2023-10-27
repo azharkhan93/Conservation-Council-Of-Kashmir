@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "types": ["@types/node", "@types/micro-cors", "stripe"],
+    "types": ["@types/node", "stripe"],
     "plugins": [
       {
         "name": "next"

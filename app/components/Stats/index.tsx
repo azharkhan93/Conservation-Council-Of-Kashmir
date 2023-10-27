@@ -100,7 +100,7 @@ const Total = () => {
           <p className="text-3xl font-semibold text-gradient counter-value " data-value={5}>
             0
           </p>
-          <p className="text-base leading-4 xl:mt-4 mt-2 text-green">Clenups Conducted By Us</p>
+          <p className="text-base leading-4 xl:mt-4 mt-2 text-green">Cleanups Conducted By Us</p>
         </div>
         <div className="shadow-lg xl:p-6 p-4 sm:w-auto w-full bg-white sm:absolute relative  md:mt-0 sm:-mt-5 mt-4 right-0 xl:mr-56sm:mr-24">
           <p className="text-3xl font-semibold text-gray-800 counter-value text-gradient" data-value={6}>
