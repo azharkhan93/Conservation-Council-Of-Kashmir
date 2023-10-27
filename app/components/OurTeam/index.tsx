@@ -35,7 +35,7 @@ const postData: DataType[] = [
   {
     profession: "General Secretary",
     name: "Azam Iftikhar",
-    imgSrc: "/images/team/Azm1.jpg",
+    imgSrc: "/images/team/Azm1.png",
   },
   
 ];
