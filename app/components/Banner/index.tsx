@@ -51,7 +51,7 @@ const Banner = () => {
                   <p className="text-white mt-6 text-l md:text-xl opacity-80 lg:text-left sm:text-center sm:text-sm">
                     Effective Waste Management Isn't Just About disposing of trash; it's a holistic approach that involves reducing waste at its source, reusing materials when possible, and recycling what we can. It's about conscious consumption and mindful disposal.
                   </p>
-                  <Link href="/instructions">
+                  <Link href="/our-work">
         <button className="mt-8 bg-green text-white text-lg py-3 px-6 rounded-md font-medium hover:bg-green-50 hover:text-green-600 focus:outline-none focus:bg-green-50">
                     Learn More
                   </button>
@@ -84,9 +84,11 @@ const Banner = () => {
                   <p className="text-white text-lg mt-6 md:text-xl text-opacity-80 sm:text-center lg:text-left">
                     In a world facing environmental challenges, it's the small acts that add up to make a big difference. Our commitment is simple yet powerful: planting tree, one at a time.
                   </p>
+                  <Link href="/our-work">
                   <button className="mt-8 bg-green text-white text-lg py-3 px-6 rounded-md font-medium hover:bg-green-50 hover:text-green-600 focus:outline-none focus:bg-green-50">
                     Learn More
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -113,9 +115,11 @@ const Banner = () => {
                   <p className="text-white text-lg mt-6 md:text-xl text-opacity-80 sm:text-center lg:text-left">
                   Safeguarding waterstreams means protecting the source of life itself. It involves responsible water usage, pollution prevention, and conservation efforts to ensure that these lifelines remain crystal clear and teeming with biodiversity.
                   </p>
+                  <Link href="/our-work">
                   <button className="mt-8 bg-green text-white text-lg py-3 px-6 rounded-md font-medium hover:bg-green-50 hover:text-green-600 focus:outline-none focus:bg-green-50">
                     Learn More
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -28,12 +28,12 @@ const postData: DataType[] = [
     imgSrc: "/images/team/Zaid.jpeg",
   },
   {
-    profession: "Co-founder",
+    profession: "General Secretary",
     name: "Inam Gani",
     imgSrc: "/images/team/gani.jpg",
   },
   {
-    profession: "General Secretary",
+    profession: "Co-founder",
     name: "Azam Iftikhar",
     imgSrc: "/images/team/Azm1.png",
   },
