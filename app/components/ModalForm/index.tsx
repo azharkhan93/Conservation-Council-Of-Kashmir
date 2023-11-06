@@ -100,6 +100,7 @@ const AuthenticationModal: React.FC<AuthenticationModalProps> = ({ isOpen, close
                       className="bg-forest border border-green text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                       placeholder="name@company.com"
                       required
+                      onClick={(e) => e.stopPropagation()}
                     />
                   </div>
                   <div>
@@ -118,6 +119,7 @@ const AuthenticationModal: React.FC<AuthenticationModalProps> = ({ isOpen, close
                       placeholder="Enter the amount"
                       className="bg-forest border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                       required
+                      onClick={(e) => e.stopPropagation()}
                     />
                   </div>
 

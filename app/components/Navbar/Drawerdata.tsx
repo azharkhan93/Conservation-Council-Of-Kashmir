@@ -1,6 +1,9 @@
+'use client'
 import React from "react";
 import Link from "next/link";
 import Contactusform from "./Contactus";
+import ModalForm from '../ModalForm/index'
+import { useState } from "react";
 
 interface NavigationItem {
     name: string;
@@ -21,11 +24,26 @@ function classNames(...classes: string[]) {
 }
 
 const Data = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
+    const handleButtonClicked = (e: { stopPropagation: () => void; }) => {
+        // Prevent closing the menu when the button is clicked
+        e.stopPropagation();
+        openModal();
+      }
     return (
         <div className="rounded-md max-w-sm w-full mx-auto">
             <div className="flex-1 space-y-4 py-1">
                 <div className="sm:block">
-                    <div className="space-y-1 px-5 pt-2 pb-6">
+                    <div className="space-y-1 px-5 pt-2 pb-6 ">
                         {navigation.map((item) => (
                             <Link
                                 key={item.name}
@@ -40,9 +58,10 @@ const Data = () => {
                             </Link>
                         ))}
                         <div className="mt-4"></div>
-                        <button className="bg-green w-full hover:text-white text-white border border-white font-medium py-2 px-4 rounded-lg">
+                        <button className="bg-green w-full hover:text-white text-white border border-white font-medium py-2 px-4 rounded-lg" onClick={handleButtonClicked}>
                             Donate Us
                         </button>
+                        <ModalForm isOpen={isModalOpen} closeModal={closeModal} />
                         {/* <Contactusform /> */}
                     </div>
                 </div>

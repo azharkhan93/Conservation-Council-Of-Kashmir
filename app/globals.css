@@ -174,9 +174,7 @@ html {
   background-position: 100% 35%;
 }
 
-.feature-margin {
-  margin-top: -480px;
-}
+
 
 @media only screen and (max-width: 768px) {
   .feature-margin {

@@ -11,11 +11,8 @@ function WasteManagementComponent() {
             This can be achieved by:
           </p>
         <div className=" mt-8 mb-4 ml-24 ">
-          {/* <p className="text-xl  font-semibold">Step 1: Reduce</p> */}
-          {/* <p className='mt-4 text-lg'>
-            The first and most important step in waste management is to reduce waste at its source. 
-            This can be achieved by:
-          </p> */}
+          
+          
           <ul className="list-disc list-inside">
             <li>Using reusable products instead of disposable ones.</li>
             <li>Buying products with minimal packaging.</li>

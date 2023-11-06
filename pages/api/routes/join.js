@@ -18,7 +18,8 @@ export default async function handler(req, res) {
         from: 'ak305368@gmail.com', 
         to: email,
         subject: 'Welcome to our community',
-        text: `Dear ${PhoneNumber},\n\nThank you for joining us!`,
+        // text: `Dear ${PhoneNumber},\n\nThank you for joining us!`,
+        text: `Dear ${PhoneNumber},\n\nThank you for joining us! We are excited to have you as part of our community. Your support and involvement are essential to our mission. Together, we can make a meaningful impact.\n\nIf you have any questions or ideas you'd like to share, please feel free to reach out. We look forward to working together for a better future.\n\nSincerely,\n[Fahad Javaid ]\n[Conservation Council Of Kashmir]`,
       };
 
       

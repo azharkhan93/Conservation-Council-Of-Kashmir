@@ -36,8 +36,8 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
                             <Image        className="mt-4  md:ml-4 lg:ml-0"
                                         src="/images/Logo.png"
                                         alt="Conservation Council Logo"
-                                        width={220} 
-                                        height={220}
+                                        width={200} 
+                                        height={200}
                                         priority
                                         
                                        
@@ -45,7 +45,7 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
                             </Link>
                         </div>
 
-                        <XMarkIcon className="block h-6 w-6" onClick={() => {
+                        <XMarkIcon className="block h-8 w-8 cursor-pointer ml-10" onClick={() => {
                             setIsOpen(false);
                         }} />
                     </header>
@@ -55,7 +55,7 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
                 </article>
             </section>
             <section
-                className="w-screen h-full cursor-pointer "
+                className="w-screen h-full cursor-pointer  "
                 onClick={() => {
                     setIsOpen(false);
                 }}
