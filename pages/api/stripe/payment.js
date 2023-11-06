@@ -26,8 +26,8 @@ export default async function handler(req, res) {
           },
         ],
         mode: 'payment',
-        success_url: 'http://localhost:3000/success',
-        cancel_url: 'http://localhost:3000/error-page',
+        success_url: 'https://www.conservationcouncil.net/success',
+        cancel_url: 'https://www.conservationcouncil.net/error-page',
       });
 
       res.status(200).json({ sessionId: session.id });
