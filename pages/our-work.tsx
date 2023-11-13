@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Gallery from '../app/components/Gallery';
+import Image from 'next/image';
 import DonateButton2 from '../app/components/DonateUsbtn2'
 import { ScrollAnimation, getScrollAnimation } from "../app/components/Animations/ScrollAnimation";
 import { useEffect, useState } from 'react';
@@ -28,7 +29,14 @@ const Blog = ()=>{
 			<div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
 			
 				<span rel="noopener noreferrer"  className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
-					<img src="images/ourwork/Azam37.jpg" alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
+				<Image
+            src="/images/ourwork/Azam37.jpg"
+            alt=""
+            width={800} // Set the width to match your image's actual width
+            height={600} // Set the height to match your image's actual height
+            className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
+          />
+					{/* <img src="images/ourwork/Azam37.jpg" alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" /> */}
 					<div className="p-6 space-y-2 lg:col-span-5">
 						<h3 className=" text-gradient text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Tree Plantation</h3>
 						<span className="text-xs dark:text-gray-400">October 9,2023</span>

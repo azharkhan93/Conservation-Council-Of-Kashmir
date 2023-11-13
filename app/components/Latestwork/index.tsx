@@ -28,12 +28,20 @@ const postData: DataType[] = [
     imgSrc: "/images/latestwork/Azam7.jpg",
   },
   {
+    heading: "Planting trees to make the world greener",
+    heading2: "Srinagr, Srinagar",
+    name: "Plantation Of Trees",
+    date: "August 19, 2021",
+    imgSrc: "/images/latestwork/pex.jpg",
+  },
+  {
     heading: "Plastic bad reduction drive",
     heading2: "Harwan, Srinagar",
     name: "Distribution of reusable bags.Distribution of ",
     date: "November 5, 2023",
     imgSrc: "/images/latestwork/plastic.jpeg",
-  },/*
+  },
+  /*
   {
     heading: "We Launch Delia",
     heading2: "Webflow this Week!",
@@ -82,10 +90,10 @@ const MultipleItems: React.FC = () => {
   };
 
   return (
-    <div className="bg-lightgrey py-20 ">
+    <div className="bg-gray-200 py-20 ">
       <div className="mx-auto max-w-7xl sm:py-4 lg:px-8">
         <div className="text-center">
-          <h3 className="text-3xl text-green sm:text-5xl font-bold mb-2">
+          <h3 className="text-3xl text-gradient sm:text-5xl font-bold mb-2">
             Our upcoming initiatives..
           </h3>
         </div>

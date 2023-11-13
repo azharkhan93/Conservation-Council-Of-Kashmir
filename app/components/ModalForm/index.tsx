@@ -8,43 +8,43 @@ interface AuthenticationModalProps {
 }
 
 const AuthenticationModal: React.FC<AuthenticationModalProps> = ({ isOpen, closeModal }) => {
-  const [amount, setAmount] = useState<number | undefined>(0);
+  // const [amount, setAmount] = useState<number | undefined>(0);
 
   const handlePayment = async () => {
-    if (!amount || isNaN(parseFloat(amount.toString()))) {
-      console.error('Invalid amount');
-      return;
-    }
+    // if (!amount || isNaN(parseFloat(amount.toString()))) {
+    //   console.error('Invalid amount');
+    //   return;
+    // }
 
-    const numericAmount = parseFloat(amount.toString()); // Convert the amount to a numeric value
+    // const numericAmount = parseFloat(amount.toString()); // Convert the amount to a numeric value
 
-    try {
-      const payload = { amount: numericAmount }; // Send the numeric amount
-      console.log('Sending payload:', payload);
+    // try {
+    //   const payload = { amount: numericAmount }; // Send the numeric amount
+    //   console.log('Sending payload:', payload);
 
-      const stripe = await getStripe();
-      const response = await axios.post('/api/stripe/payment', payload, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+    //   const stripe = await getStripe();
+    //   const response = await axios.post('/api/stripe/payment', payload, {
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //   });
 
-      const data = response.data;
-      console.log(data);
+    //   const data = response.data;
+    //   console.log(data);
 
-      const { error } = await (stripe?.redirectToCheckout({
-        sessionId: data.sessionId,
-      }) ?? {}); 
+    //   const { error } = await (stripe?.redirectToCheckout({
+    //     sessionId: data.sessionId,
+    //   }) ?? {}); 
       
-      if (error) {
-        console.error(error);
-      }
+    //   if (error) {
+    //     console.error(error);
+    //   }
       
 
       
-    } catch (error) {
-      console.error(error);
-    }
+    // } catch (error) {
+    //   console.error(error);
+    // }
   };
 
   return (
@@ -114,8 +114,8 @@ const AuthenticationModal: React.FC<AuthenticationModalProps> = ({ isOpen, close
                       type="number"
                       name="amount"
                       id="amount"
-                      value={amount}
-                      onChange={(e) => setAmount(parseFloat(e.target.value))}
+                      // value={amount}
+                      // onChange={(e) => setAmount(parseFloat(e.target.value))}
                       placeholder="Enter the amount"
                       className="bg-forest border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                       required

@@ -6,6 +6,7 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Link from "next/link";
+import Image from "next/image";
 
 const Banner = () => {
   const images = ["/images/banner/Azam15.jpg", "/images/banner/Azam8.jpg", "/images/banner/Azam51.jpg"];
@@ -34,39 +35,7 @@ const Banner = () => {
   return (
     <div className="relative h-100 ">
       <Slider {...settings}>
-        <div
-          className="relative h-screen bg-cover"
-          style={{
-            backgroundImage: `url('${images[0]}')`,
-            zIndex: currentIndex === 0 ? 1 : 0,
-          }}
-        >
-          <div className="relative h-screen bg-cover" style={{ backgroundImage: "url('/images/banner/Azam15.jpg')" }}>
-            <div className="container h-full mx-auto px-4 py-16 md:py-24 lg:py-32">
-              <div className="flex h-full items-start md:items-center" style={{ marginTop: '8rem' }}>
-                <div className="md:w-1/2 mt-8 md:mt-0 sm:mt-9 text-center sm:text-left">
-                  <h1 className="text-2xl mt-6 md:text-6xl lg:text-5xl font-bold text-green text-opacity-80 lg:text-left">
-                    A Cleaner World Begins With Better Waste Management.
-                  </h1>
-                  <p className="text-white mt-6 text-l md:text-xl opacity-80 lg:text-left sm:text-center sm:text-sm">
-                    Effective Waste Management Isn't Just About disposing of trash; it's a holistic approach that involves reducing waste at its source, reusing materials when possible, and recycling what we can. It's about conscious consumption and mindful disposal.
-                  </p>
-                  <Link href="/our-work">
-                    <button className="mt-8 bg-green text-white text-lg py-3 px-6 rounded-md font-medium hover:bg-green-50 hover:text-green-600 focus:outline-none focus:bg-green-50">
-                      Learn More
-                    </button>
-                  </Link>
-
-                </div>
-              </div>
-            </div>
-            <div className="absolute bottom-4 right-4 text-white text-opacity-80 text-sm md:text-base">
-              Photo by <a href="https://www.instagram.com/aabidrebel/?igshid=MzRlODBiNWFlZA%3D%3D" className="text-green-500">Abid Ali Bhat</a>
-            </div>
-          </div>
-
-        </div>
-        <div
+      <div
           className="relative h-screen bg-cover"
           style={{
             backgroundImage: `url('${images[0]}')`,
@@ -76,9 +45,9 @@ const Banner = () => {
         >
           <div className="relative h-screen t bg-cover " style={{ backgroundImage: "url('/images/banner/Azam8.jpg')" }}>
             <div className="container h-full opacity-80 mx-auto px-4 py-16 md:py-24 lg:py-32">
-              <div className="flex h-full items-start md:items-center sm:center" style={{ marginTop: '8rem' }}>
+              <div className="flex h-full items-start md:items-center sm:center " style={{ marginTop: '8rem' }}>
                 <div className="md:w-1/2 sm:mt-9 text-center sm:text-left">
-                  <h1 className="text-4xl mt-8 md:text-6xl lg:text-5xl font-bold text-white mb-6 text-opacity-100 sm:text-center lg:text-left" >
+                  <h1 className="text-4xl mt-24 md:text-6xl lg:text-5xl font-bold text-white mb-6 text-opacity-100 sm:text-center lg:text-left" >
                     Planting Tree, One At a Time
                   </h1>
 
@@ -99,6 +68,44 @@ const Banner = () => {
             </div>
           </div>
         </div>
+        <div
+          className="relative h-screen bg-cover"
+          style={{
+            backgroundImage: `url('${images[0]}')`,
+            zIndex: currentIndex === 0 ? 1 : 0,
+          }}
+        >
+          <div className="relative h-screen bg-cover" style={{ backgroundImage: "url('/images/banner/Azam15.jpg')" }}>
+            <div className="container h-full mx-auto px-4 py-16 md:py-24 lg:py-32">
+              <div className="flex h-full items-start md:items-center" style={{ marginTop: '8rem' }}>
+                <div className="md:w-1/2 mt-8 md:mt-0 sm:mt-9 text-center sm:text-left">
+                  <h1 className="text-2xl mt-20 md:text-6xl lg:text-5xl font-bold text-green text-opacity-100 lg:text-left">
+                    A Cleaner World Begins With Better Waste Management.
+                  </h1>
+                  <p className="text-white mt-6 text-l md:text-xl opacity-100 lg:text-left sm:text-center sm:text-sm">
+                    Effective Waste Management Isn't Just About disposing of trash; it's a holistic approach that involves reducing waste at its source, reusing materials when possible, and recycling what we can. It's about conscious consumption and mindful disposal.
+                  </p>
+                  <Link href="/our-work">
+                    <button className="mt-4 bg-green text-white text-lg py-3 px-6 rounded-md font-medium hover:bg-green-50 hover:text-green-600 focus:outline-none focus:bg-green-50">
+                      Learn More
+                    </button>
+                  </Link>
+
+                </div>
+              </div>
+              {/* <Image
+        src="/images/banner/Azam15.jpg"
+        alt="Your Image Alt Text"
+        layout="fill" 
+      /> */}
+            </div>
+            <div className="absolute bottom-4 right-4 text-white text-opacity-80 text-sm md:text-base">
+              Photo by <a href="https://www.instagram.com/aabidrebel/?igshid=MzRlODBiNWFlZA%3D%3D" className="text-green-500">Abid Ali Bhat</a>
+            </div>
+          </div>
+
+        </div>
+        
 
 
         <div
@@ -112,14 +119,14 @@ const Banner = () => {
             <div className="container h-full opacity-80 mx-auto px-4 py-16 md:py-24 lg:py-32">
               <div className="flex h-full items-start md:items-center sm:center" style={{ marginTop: '8rem' }}>
                 <div className="md:w-1/2 sm:mt-9 text-center sm:text-left">
-                  <h1 className="text-2xl mt-8 md:text-6xl lg:text-5xl font-bold text-white mb-6 text-opacity-80 sm:text-center lg:text-left">
+                  <h1 className="text-2xl mt-20 md:text-6xl lg:text-5xl font-bold text-white mb-6 text-opacity-100 sm:text-center lg:text-left">
                     Safeguarding Waterstreams
                   </h1>
-                  <p className="text-white text-lg mt-6 md:text-xl text-opacity-80 sm:text-center lg:text-left">
+                  <p className="text-white text-lg mt-6 md:text-xl text-opacity-100 sm:text-center lg:text-left">
                     Safeguarding waterstreams means protecting the source of life itself. It involves responsible water usage, pollution prevention, and conservation efforts to ensure that these lifelines remain crystal clear and teeming with biodiversity.
                   </p>
                   <Link href="/our-work">
-                    <button className="mt-8 bg-green text-white text-lg py-3 px-6 rounded-md font-medium hover:bg-green-50 hover:text-green-600 focus:outline-none focus:bg-green-50">
+                    <button className="mt-5 bg-green text-white text-lg py-3 px-6 rounded-md font-medium hover:bg-green-50 hover:text-green-600 focus:outline-none focus:bg-green-50">
                       Learn More
                     </button>
                   </Link>

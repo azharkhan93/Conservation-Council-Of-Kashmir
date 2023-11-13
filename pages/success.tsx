@@ -1,9 +1,39 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
+
+
+// import React from 'react'
+
+
+// const TextEffect17 = () => {
+//   return (
+//     <div className="text-gray-200 text-4xl font-bold uppercase flex flex-col justify-around mt-24 text-left">
+//   <div className="flex items-center"> {/* Added a flex container */}
+//     <span>Make</span> 
+//     <div className="overflow-hidden h-14">
+//       <div className="animate-slide"><span className="inline-block text-green py-1 px-3 mt-1 mb-11 bg-blue-500">Plant Trees </span></div>
+//       <div><span className="inline-block py-1 px-3 mb-11 text-green">Go Greener!</span></div>
+//       <div><span className="inline-block text-green py-1 px-3  bg-red-500">Everything</span></div>
+//     </div>
+//     <span className='mr-4'>AweSoMe!</span>
+//   </div>
+//   {/* <span >AweSoMe!</span> */}
+// </div>
+
+  
+//   )
+// }
+
+// export default TextEffect17
+
+
 import React from 'react';
 import Link from 'next/link';
 
 const SuccessPage = () => {
   return (
-    <div className=" py-32 bg-grey ">
+    <div className=" py-32 bg-gray-200 ">
       <svg viewBox="0 0 24 24" className="text-gradient w-16 h-16 mx-auto mt-32 my-8">
         <path
        
@@ -28,4 +58,5 @@ const SuccessPage = () => {
 };
 
 export default SuccessPage;
+
 

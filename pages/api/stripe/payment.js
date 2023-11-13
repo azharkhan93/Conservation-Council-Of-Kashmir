@@ -42,3 +42,44 @@ export default async function handler(req, res) {
 
 
 
+// import { NextApiRequest, NextApiResponse } from 'next';
+// import Razorpay from 'razorpay';
+
+// const razorpay = new Razorpay({
+//   key_id: process.env.RAZORPAY_KEY_ID,
+//   key_secret: process.env.RAZORPAY_KEY_SECRET,
+// });
+
+// export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+//   if (req.method === 'POST') {
+//     try {
+//       const { amount } = req.body;
+
+//       if (typeof amount !== 'number' || isNaN(amount) || amount <= 0) {
+//         return res.status(400).json({ error: 'Invalid amount' });
+//       }
+
+//       const options = {
+//         amount: amount * 100, 
+//         currency: 'INR', 
+//         receipt: 'receipt_id', 
+//         payment_capture: 1, 
+//       };
+
+//       razorpay.orders.create(options, (err, order) => {
+//         if (err) {
+//           return res.status(500).json({ error: 'Razorpay order creation failed' });
+//         }
+
+//         return res.status(200).json(order);
+//       });
+
+//     } catch (error) {
+//       return res.status(500).json({ error: 'Razorpay order creation failed' });
+//     }
+//   }
+// }
+
+
+
+

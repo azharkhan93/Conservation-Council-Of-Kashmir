@@ -8,7 +8,31 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  // theme: {
+  //   extend: {
+  //     animation: {
+  //       'slide': 'slide 5s linear infinite',
+  //     },
+  //     keyframes: {
+  //       slide: {
+  //         '0%, 100%': {
+  //           'margin-top': '-270px',
+  //         },
+  //         '5%, 33%': {
+  //           'margin-top': '-180px',
+  //         },
+  //         '38%, 66%': {
+  //           'margin-top': '-90px',
+  //         },
+  //         '71%, 99.99%': {
+  //           'margin-top': '0px'
+  //         }
+  //       },
+  //     },
+  //   },
+  // },
   theme: {
+    
     screens: {
       'sm': '640px',
       'md': '768px',
@@ -47,7 +71,13 @@ module.exports = {
       'forest' : '#014421',
       'lacoste' : '#004526',
       'gradient': '#52c234',
-      'grass' : '#40826D'
+      'grass' : '#40826D',
+      'gray': {
+        200: '#558B2F',
+      },
+      'red': {
+        300: '#B71C1C',
+      },
       
     },
     fontSize: {
@@ -67,7 +97,29 @@ module.exports = {
       '65xl': ['65px', { lineHeight: '1' }],
       '80xl': ['80px', { lineHeight: '6rem' }],
     },
-    extend: {},
+    extend: {
+      // extend: {
+        animation: {
+          'slide': 'slide 5s linear infinite',
+        },
+        keyframes: {
+          slide: {
+            '0%, 100%': {
+              'margin-top': '-270px',
+            },
+            '5%, 33%': {
+              'margin-top': '-180px',
+            },
+            '38%, 66%': {
+              'margin-top': '-90px',
+            },
+            '71%, 99.99%': {
+              'margin-top': '0px'
+            }
+          },
+        },
+      // },
+    },
   },
   plugins: [],
 }

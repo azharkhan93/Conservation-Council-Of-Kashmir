@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const ErrorPage = () => {
   return (
-    <div className="h-screen w-screen bg-grey flex items-center">
+    <div className="h-screen w-screen bg-red-300 flex items-center">
       <div className="container flex flex-col md:flex-row items-center justify-between px-5 text-white">
         <div className="w-full lg:w-1/2 lg:mt-32 mx-8 mt-32">
           <div className="text-7xl text-green-500 font-dark font-extrabold lg:mb-6 mt-4 ">404</div>

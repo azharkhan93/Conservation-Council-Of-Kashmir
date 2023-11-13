@@ -80,7 +80,9 @@ const About = () => {
           </div>
 
         </div>
+        
       </div>
+      
 
 
       <OurTeam />
