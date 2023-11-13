@@ -99,60 +99,9 @@ import React from 'react';
 function WasteManagementComponent() {
   return (
     
-    <><header className="bg-gray-100 lg:bg-transparent">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 grid-rows-[auto_1fr] gap-y-16 py-16 md:py-20 lg:grid-cols-12 lg:gap-y-20 lg:px-3 lg:pb-36 lg:py-20 xl:py-32 items-start">
-        <div className="relative flex items-end lg:col-span-5 lg:row-span-2">
-          <div className="relative  flex w-64 mx-auto overflow-hidden md:w-80 lg:w-auto rounded-lg border-x-green ml-10">
-            <img alt="" src="/images/Azam4.jpg" decoding="async" data-nimg="future" className="object-cover w-full h-1/3" />
-            </div>
-        </div>
-        <div className="relative order-first px-4 sm:px-6 lg:col-span-7 lg:pl-0 lg:pb-14 lg:pr-16 xl:pr-20 bg-lacoste rounded-lg">
-          <div className="hidden lg:absolute lg:bottom-0 lg:-top-32 lg:left-[-100vw] lg:right-[-100vw] lg:block lg:bg-gray-200"></div>
-          <figure className="relative max-w-md mx-auto text-center lg:mx-0 lg:text-left">
-            <div className="flex justify-center text-black lg:justify-start">
-              {/* <div className="flex gap-1">
-                <ion-icon class="w-5 h-5 fill-current md hydrated" name="star" role="img" aria-label="star"></ion-icon>
-                <ion-icon class="w-5 h-5 fill-current md hydrated" name="star" role="img" aria-label="star"></ion-icon>
-                <ion-icon class="w-5 h-5 fill-current md hydrated" name="star" role="img" aria-label="star"></ion-icon>
-                <ion-icon class="w-5 h-5 fill-current md hydrated" name="star" role="img" aria-label="star"></ion-icon>
-                <ion-icon class="w-5 h-5 fill-current md hydrated" name="star" role="img" aria-label="star"></ion-icon>
-              </div> */}
-            </div>
-            <blockquote className="mt-2">
-              <p className="text-xl font-medium text-black">
-                “Here you can write a nice testimonial for your product!”
-              </p>
-            </blockquote>
-            <figcaption className="mt-2 text-sm text-black">
-              <strong className="font-semibold text-black before:content-['—_']">Michael Andreuzza</strong>, Batman
-            </figcaption>
-          </figure>
-        </div>
-        <div className="pt-16 bg-white lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pr-16 xl:pr-20">
-          <div className="px-4 mx-auto sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
-            <div className="max-w-xl text-center lg:text-left">
-              <div><p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">
-                I am a short heading
-              </p>
-                <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
-                  Use this paragraph to share information about your company or products. Make
-                  it engaging and interesting, and showcase your brand's personality. Thanks for
-                  visiting our website!
-                </p>
-              </div>
-              <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
-                <a href="#" className="items-center justify-center w-full px-6 py-2.5  text-center text-white duration-200 bg-black border-2 border-black rounded-full inline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
-                  Button
-                </a>
-                <a href="#" className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600">
-                  Learn more &nbsp; →
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header><div className="  p-4 md:p-8 lg:p-12">
+    <>
+    
+    <div className="  p-4 md:p-8 lg:p-12">
         <h2 className="text-3xl mt-11 font-bold mb-4">Waste Management</h2>
         <div className="space-y-4">
           <p className="text-xl  font-semibold">Step 1: Reduce</p>
