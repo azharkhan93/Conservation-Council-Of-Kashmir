@@ -22,7 +22,7 @@ const Beliefs = () => {
     <div className=" p-4 md:p-6 lg:p-8  shadow-lg flex flex-col items-center justify-center">
     <div className=" mt-4 mb-3 flex flex-col justify-center items-center bg-cover bg-clip-text bg-center text-transparent lg:text-3xl sm:text-2xl  sm:font-bold font-bold text-2xl tracking-wide antialiased " 
     style={{ backgroundImage: "url(https://media.giphy.com/media/xTiTniuHdUjpOlNo1q/source.gif)" }}>
-    What Is Conservation Council Of Kashmir!? 
+    <p className="italic">What Is Conservation Council Of Kashmir!?</p>
       </div>
       {/* <div className=" lg:text-gradient lg:text-3xl text-green text-2xl">
   This text is red and has a larger font size on small screens,

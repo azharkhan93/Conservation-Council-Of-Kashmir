@@ -69,7 +69,7 @@ const Donateus = () => {
             <div className="container mx-auto py-12 px-4">
               <div className="max-w-xl mx-auto text-center">
                 <h2 className="text-3xl md:text-5xl font-bold text-green mb-6">
-                  Give Generously, Donate Now
+                  Give Generously, <span className="italic">Donate Now</span>
                 </h2>
                 <p className="text-lg md:text-xl text-white">
                   Your support can make a difference. Help us in our mission to protect and preserve nature. Every little contribution counts!
