@@ -48,7 +48,7 @@ const Banner = () => {
               <div className="flex h-full items-start md:items-center sm:center " style={{ marginTop: '8rem' }}>
                 <div className="md:w-1/2 sm:mt-9 text-center sm:text-left">
                   <h1 className="text-4xl mt-24 md:text-6xl lg:text-5xl font-bold text-white mb-6 text-opacity-100 sm:text-center lg:text-left" >
-                    Planting Tree, One At a Time
+                    Planting Trees, One At a Time
                   </h1>
 
                   <p className="text-white text-lg mt-6 md:text-xl text-opacity-100 sm:text-center lg:text-left">

@@ -69,7 +69,7 @@ const About = () => {
 
             <h3 className="text-lg  text-white mt-4">We invite you to be part of this transformative journey. Together, we can create a brighter, more sustainable future. Join us as we take meaningful steps towards a world where nature thrives, communities flourish, and the environment is cherished for generations to come.</h3>
 
-            <p className="my-6 dark:text-white text-lg"> Through our tree planting initiatives, we seek to breathe life back into the Earth, one sapling at a time. Our cleanup efforts go beyond the removal of waste; they rejuvenate landscapes and inspire community engagement. Our waste reduction programs promote responsible consumption and waste management, contributing to a healthier planet.</p>
+            <p className="my-6 text-white text-lg"> Through our tree planting initiatives, we seek to breathe life back into the Earth, one sapling at a time. Our cleanup efforts go beyond the removal of waste; they rejuvenate landscapes and inspire community engagement. Our waste reduction programs promote responsible consumption and waste management, contributing to a healthier planet.</p>
             <button
               type="button"
               className="self-start text-white bg-forest px-4 py-3 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400"

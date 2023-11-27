@@ -33,6 +33,8 @@ import Link from 'next/link';
 
 const SuccessPage = () => {
   return (
+
+
     <div className=" py-32 bg-gray-200 ">
       <svg viewBox="0 0 24 24" className="text-gradient w-16 h-16 mx-auto mt-32 my-8">
         <path

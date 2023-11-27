@@ -91,100 +91,120 @@
 
 // export default Gallery;
 
+// components/BankTransferDetails.js
 
+import Image from 'next/image';  // Import Image from Next.js
 
-
-import React from 'react';
-
-function WasteManagementComponent() {
+const BankTransferDetails = () => {
   return (
-    
-    <>
-    
-    <div className="  p-4 md:p-8 lg:p-12">
-        <h2 className="text-3xl mt-11 font-bold mb-4">Waste Management</h2>
-        <div className="space-y-4">
-          <p className="text-xl  font-semibold">Step 1: Reduce</p>
-          <p className='mt-4 text-lg shadow-lg'>
-            The first and most important step in waste management is to reduce waste at its source.
-            This can be achieved by:
-          </p>
-          <div className=" mt-8 mb-4 ml-24 ">
+  <div className='bg-gradient'>
+    <div className="relative max-w-md mx-auto bg-gradient p-8 border rounded shadow-lg mt-20 sm:mt-18">
+      
 
+      <h2 className="text-2xl font-semibold mb-4 text-white">Online Bank Transfer Details</h2>
 
-            <ul className="list-disc list-inside">
-              <li>Using reusable products instead of disposable ones.</li>
-              <li>Buying products with minimal packaging.</li>
-              <li>Avoiding single-use plastics.</li>
-              <li>Being mindful of food waste and only purchasing what you can consume.</li>
-            </ul>
-          </div>
+      <div className="mb-4">
+        <p className="text-gray-700 font-medium">Name of the Account Holder:</p>
+        <p className="text-black font-bold">Conservation Council Of Kashmir</p>
+      </div>
 
-          <div className="mb-4">
-            <p className="text-xl font-semibold">Step 2: Reuse</p>
-            <p>
-              Reusing items is another effective way to control waste. Instead of throwing things away after a single use,
-              consider:
-            </p>
-            <ul className="list-disc list-inside">
-              <li>Repairing items when they break instead of replacing them.</li>
-              <li>Donating or selling items you no longer need.</li>
-              <li>Using containers and bags that can be reused for shopping and storage.</li>
-            </ul>
-          </div>
-          <div className="mb-4">
-            <p className="text-xl font-semibold">Step 2: Reuse</p>
-            <p>
-              Reusing items is another effective way to control waste. Instead of throwing things away after a single use,
-              consider:
-            </p>
-            <ul className="list-disc list-inside">
-              <li>Repairing items when they break instead of replacing them.</li>
-              <li>Donating or selling items you no longer need.</li>
-              <li>Using containers and bags that can be reused for shopping and storage.</li>
-            </ul>
-          </div>
-          <div className="mb-4">
-            <p className="text-xl font-semibold">Step 2: Reuse</p>
-            <p>
-              Reusing items is another effective way to control waste. Instead of throwing things away after a single use,
-              consider:
-            </p>
-            <ul className="list-disc list-inside">
-              <li>Repairing items when they break instead of replacing them.</li>
-              <li>Donating or selling items you no longer need.</li>
-              <li>Using containers and bags that can be reused for shopping and storage.</li>
-            </ul>
-          </div>
+      <div className="mb-4">
+        <p className="text-gray-700 font-medium">Account Number:</p>
+        <p className="text-black font-bold">06331010004088778</p>
+      </div>
 
+      <div className="mb-4">
+        <p className="text-gray-700 font-medium">IFSC Code:</p>
+        <p className="text-black font-bold">ANDB08788783</p>
+      </div>
 
+      <div className="mb-4">
+        <p className="text-gray-700 font-medium">Bank Name:</p>
+        <p className="text-black font-bold">Andhra Bank</p>
+      </div>
 
-        </div>
-      </div></>
-//     <div className="flex min-h-screen">
-//     <section className="grid grid-cols-3 text-gray-900  sm:grid-cols-2">
-//         <div className=" z-10 h-full col-span-2 sm:col-span-1 place-self-end">
-//             <div className="flex items-center w-full h-full">
-//                 <div className="max-w-xs p-4 text-sm text-right sm:max-w-xl sm:p-10 sm:text-base lg:max-w-2xl">
-//                     <h1 className="mb-10 -mr-12 text-2xl font-bold leading-tight text-green sm:-mr-20 sm:text-3xl md:text-4xl lg:text-5xl">
-//                         We Deliver at your<br />
-//                         Doorstep.
-//                     </h1>
-//                     <p className="mb-10 lg:pl-32">
-//                         With our award-winning delivery service, our personnel delivers food directly to your doorstep. With your safety in mind, all deliveries are tracked and recorded.
-//                     </p>
-//                     <a href="#" className="px-1 pb-1 font-semibold uppercase transition-colors duration-500 border-b-4 border-lacoste text-md hover:border-green hover:text-forest">Learn more</a>
-//                 </div>
-//             </div>
-//         </div>
-//         <div className="min-h-full">
-//             <img  className="object-cover w-full h-96 mt-24 sm:h-80 lg:h-96"
-//                 src="/images/Azam4.jpg"
-//                 alt="Saving trees" />
-//         </div>
-//     </section>
-// </div>
+      <div className="mb-4">
+        <p className="text-gray-700 font-medium">Bank Branch:</p>
+        <p className="text-black font-bold">Axis Bank</p>
+      </div>
+    </div>
+    </div>
   );
-}
+};
 
-export default WasteManagementComponent;
+export default BankTransferDetails;
+
+
+
+
+// import React from 'react';
+
+// function WasteManagementComponent() {
+//   return (
+    
+//     <>
+    
+//     <div className="  p-4 md:p-8 lg:p-12">
+//         <h2 className="text-3xl mt-11 font-bold mb-4">Waste Management</h2>
+//         <div className="space-y-4">
+//           <p className="text-xl  font-semibold">Step 1: Reduce</p>
+//           <p className='mt-4 text-lg shadow-lg'>
+//             The first and most important step in waste management is to reduce waste at its source.
+//             This can be achieved by:
+//           </p>
+//           <div className=" mt-8 mb-4 ml-24 ">
+
+
+//             <ul className="list-disc list-inside">
+//               <li>Using reusable products instead of disposable ones.</li>
+//               <li>Buying products with minimal packaging.</li>
+//               <li>Avoiding single-use plastics.</li>
+//               <li>Being mindful of food waste and only purchasing what you can consume.</li>
+//             </ul>
+//           </div>
+
+//           <div className="mb-4">
+//             <p className="text-xl font-semibold">Step 2: Reuse</p>
+//             <p>
+//               Reusing items is another effective way to control waste. Instead of throwing things away after a single use,
+//               consider:
+//             </p>
+//             <ul className="list-disc list-inside">
+//               <li>Repairing items when they break instead of replacing them.</li>
+//               <li>Donating or selling items you no longer need.</li>
+//               <li>Using containers and bags that can be reused for shopping and storage.</li>
+//             </ul>
+//           </div>
+//           <div className="mb-4">
+//             <p className="text-xl font-semibold">Step 2: Reuse</p>
+//             <p>
+//               Reusing items is another effective way to control waste. Instead of throwing things away after a single use,
+//               consider:
+//             </p>
+//             <ul className="list-disc list-inside">
+//               <li>Repairing items when they break instead of replacing them.</li>
+//               <li>Donating or selling items you no longer need.</li>
+//               <li>Using containers and bags that can be reused for shopping and storage.</li>
+//             </ul>
+//           </div>
+//           <div className="mb-4">
+//             <p className="text-xl font-semibold">Step 2: Reuse</p>
+//             <p>
+//               Reusing items is another effective way to control waste. Instead of throwing things away after a single use,
+//               consider:
+//             </p>
+//             <ul className="list-disc list-inside">
+//               <li>Repairing items when they break instead of replacing them.</li>
+//               <li>Donating or selling items you no longer need.</li>
+//               <li>Using containers and bags that can be reused for shopping and storage.</li>
+//             </ul>
+//           </div>
+
+
+
+//         </div>
+//       </div></>            
+//   );
+// }
+
+// export default WasteManagementComponent;

@@ -184,8 +184,10 @@ const LeadershipSlider = () => {
   };
 
   return (
+    
     <div className="bg-gray-50 dark:bg-gray-800 py-20 mt-4">
       <div className="container mx-auto px-6 md:px-12 xl:px-32">
+      
         <div className="mb-16">
           <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 dark:text-gradient md:text-4xl">
             Meet Our Team
@@ -217,7 +219,7 @@ const LeadershipSlider = () => {
               </a> */}
               <h4 className="text-2xl text-gray-700 dark:text-lacoste">Azam Iftikhar</h4>
               <span className="block text-1xl font-bold text-gradient mt-2">Co-founder</span>
-              <a href="https://www.linkedin.com/in/inamgani/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/azamiftikhar/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-2xl text-blue  -mt-26 ml-40 z-6 mt-4 hover:text-blue" />
               </a>
               {/* <a
