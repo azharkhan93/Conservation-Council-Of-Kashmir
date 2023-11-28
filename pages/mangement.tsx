@@ -97,35 +97,35 @@ import Image from 'next/image';  // Import Image from Next.js
 
 const BankTransferDetails = () => {
   return (
-  <div className='bg-gradient'>
+  <div className='bg-gradient-to-b from-forest to-gradient py-20'>
     <div className="relative max-w-md mx-auto bg-gradient p-8 border rounded shadow-lg mt-20 sm:mt-18">
       
 
       <h2 className="text-2xl font-semibold mb-4 text-white">Online Bank Transfer Details</h2>
 
       <div className="mb-4">
-        <p className="text-gray-700 font-medium">Name of the Account Holder:</p>
+        <p className="text-black font-medium">Name of the Account Holder:</p>
         <p className="text-black font-bold">Conservation Council Of Kashmir</p>
       </div>
 
       <div className="mb-4">
-        <p className="text-gray-700 font-medium">Account Number:</p>
-        <p className="text-black font-bold">06331010004088778</p>
+        <p className="text-black font-medium">Account Number:</p>
+        <p className="text-black font-bold">923020059048567</p>
       </div>
 
       <div className="mb-4">
-        <p className="text-gray-700 font-medium">IFSC Code:</p>
-        <p className="text-black font-bold">ANDB08788783</p>
+        <p className="text-black font-medium">IFSC Code:</p>
+        <p className="text-black font-bold">UTIB0004849</p>
       </div>
 
       <div className="mb-4">
-        <p className="text-gray-700 font-medium">Bank Name:</p>
-        <p className="text-black font-bold">Andhra Bank</p>
-      </div>
-
-      <div className="mb-4">
-        <p className="text-gray-700 font-medium">Bank Branch:</p>
+        <p className="text-black font-medium">Bank Name:</p>
         <p className="text-black font-bold">Axis Bank</p>
+      </div>
+
+      <div className="mb-4">
+        <p className="text-black font-medium">Bank Branch:</p>
+        <p className="text-black font-bold">Baghat Srinagar Jammu & Kashmir</p>
       </div>
     </div>
     </div>

@@ -14,47 +14,47 @@ const Donateus = () => {
     setAnimationVariants(variants);
   }, []);
 
-  useEffect(() => {
-    // Load the Razorpay script here
-    const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/checkout.js";
-    script.async = true;
-    document.body.appendChild(script);
+  // useEffect(() => {
+  //   // Load the Razorpay script here
+  //   const script = document.createElement("script");
+  //   script.src = "https://checkout.razorpay.com/v1/checkout.js";
+  //   script.async = true;
+  //   document.body.appendChild(script);
 
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
 
-  const handleDonateClick = () => {
-    const options = {
-      key: "process.env.RAZORPAY_API_KEY", // Replace with your Razorpay key
-      amount: 1000, // Replace with the donation amount
-      name: "Your Donation",
-      description: "Donation for a cause",
-      image: "/path-to-your-image.png", // Replace with your image URL
-      handler: function (response: { razorpay_payment_id: any; }) {
-        if (response.razorpay_payment_id) {
-          // Payment was successful, redirect to the success page
-          router.push("/success"); // Use router.push to redirect to the success page
-        } else {
-          // Payment failed, redirect to the error page
-          router.push("/error-page"); // Use router.push to redirect to the error page
-        }
-      },
-      prefill: {
-        name: "Your Name",
-        email: "your.email@example.com",
-        contact: "1234567890",
-      },
-      theme: {
-        color: "#009688", // Change to your preferred color
-      },
-    };
+  // const handleDonateClick = () => {
+  //   const options = {
+  //     key: "process.env.RAZORPAY_API_KEY", 
+  //     amount: 1000, 
+  //     name: "Your Donation",
+  //     description: "Donation for a cause",
+  //     image: "/path-to-your-image.png", 
+  //     handler: function (response: { razorpay_payment_id: any; }) {
+  //       if (response.razorpay_payment_id) {
+          
+  //         router.push("/success");
+  //       } else {
+          
+  //         router.push("/error-page"); 
+  //       }
+  //     },
+  //     prefill: {
+  //       name: "Your Name",
+  //       email: "your.email@example.com",
+  //       contact: "1234567890",
+  //     },
+  //     theme: {
+  //       color: "#009688", 
+  //     },
+  //   };
 
-    const rzp = new window.Razorpay(options);
-    rzp.open();
-  };
+  //   const rzp = new window.Razorpay(options);
+  //   rzp.open();
+  // };
 
   return (
     <>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import ModalForm from "../ModalForm/index";
 
@@ -27,13 +28,16 @@ const Cta = () => {
               </div>
               <div className="w-full px-4 lg:w-1/2">
                 <div className="flex flex-wrap space-x-4 lg:justify-end">
+                  <Link href='/mangement'>
                   <span
                     className={`my-1 cursor-pointer inline-block rounded bg-white py-4 px-6 text-base font-medium text-gradient transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9 mx-auto sm:mx-0 sm:block`}
                     role="button"
-                    onClick={openModal}
+                    // onClick={openModal}
                   >
                     Donate A Tree
                   </span>
+                  </Link>
+                  
 
                 </div>
                 <ModalForm isOpen={isModalOpen} closeModal={closeModal} />
