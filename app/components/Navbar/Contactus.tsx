@@ -30,7 +30,7 @@ const Contactusform = () => {
         // handle form submission
     };
 
-    const isDisabled = inputValues.email === '' || inputValues.amount === '';
+    // const isDisabled = inputValues.email === '' || inputValues.amount === '';
 
 
 
@@ -84,15 +84,18 @@ const Contactusform = () => {
                         Contact Us
                     </button>
                 </div> */}
+                {/* <Link href='/mangement'></Link> */}
                 <div className='hidden lg:block'>
+                <Link href='/mangement'>
                     <button type="button" className='justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-gradient hover:text-white' onClick={openModal}>
                         Donate Us
                     </button>
+                    </Link>
                 </div>
             </div>
 
-            <Transition appear show={isOpen} as={Fragment}>
-                <Dialog as="div" className="relative z-50" onClose={closeModal}>
+            <Transition appear as={Fragment}>
+                <Dialog as="div" className="relative z-50">
                     <Transition.Child
                         as={Fragment}
                         enter="ease-out duration-300"
@@ -120,7 +123,7 @@ const Contactusform = () => {
 
                                     <div className="py-8 lg:py-8 px-4 mx-auto max-w-screen-md">
                                         
-                                        <form action="#" className="space-y-8" onSubmit={handleSubmit}>
+                                        <form action="#" className="space-y-8" >
                                             
                                             <div>
                                                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
@@ -153,11 +156,13 @@ const Contactusform = () => {
                                                     placeholder="Enter Amount"
                                                 />
                                             </div>
+                                            <Link href='/mangement'>
                                             <button type="submit"
-                                                onClick={handlePayment}
-                                                 disabled={isDisabled}
+                                                // onClick={handlePayment}
+                                                //  disabled={isDisabled}
                                                 className="py-3 px-5 text-sm disabled:opacity-50 font-medium w-full text-center text-white rounded-lg bg-forest focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Proceed with payment
                                                 </button>
+                                                </Link>
 
                                         </form>
 

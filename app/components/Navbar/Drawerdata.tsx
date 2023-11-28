@@ -58,10 +58,12 @@ const Data = () => {
                             </Link>
                         ))}
                         <div className="mt-4"></div>
+                        <Link href={'/mangement'}>
                         <button className="bg-green w-full hover:text-white text-white border border-white font-medium py-2 px-4 rounded-lg" onClick={handleButtonClicked}>
                             Donate Us
                         </button>
-                        <ModalForm isOpen={isModalOpen} closeModal={closeModal} />
+                        </Link>
+                        {/* <ModalForm isOpen={isModalOpen} closeModal={closeModal} /> */}
                         {/* <Contactusform /> */}
                     </div>
                 </div>
