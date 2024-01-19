@@ -98,7 +98,8 @@ import Image from 'next/image';  // Import Image from Next.js
 const BankTransferDetails = () => {
   return (
   <div className='bg-gradient-to-b from-forest to-gradient py-20'>
-    <div className="relative max-w-md mx-auto bg-gradient p-8 border rounded shadow-lg mt-20 sm:mt-18">
+  <div className="flex flex-col sm:flex-row justify-between">
+    <div className="sm:w-1/2  relative max-w-md mx-auto bg-gradient p-8 border rounded shadow-lg mt-20 sm:mt-18">
       
 
       <h2 className="text-2xl font-semibold mb-4 text-white">Online Bank Transfer Details</h2>
@@ -127,6 +128,16 @@ const BankTransferDetails = () => {
         <p className="text-black font-medium">Bank Branch:</p>
         <p className="text-black font-bold">Baghat Srinagar Jammu & Kashmir</p>
       </div>
+    </div>
+    <div className="relative max-w-md mx-auto mt-20 sm:mt-18">
+    <Image
+      src="/scanner.jpg"
+      alt="Image Description"
+      width={300} // Set your desired width
+      height={200} // Set your desired height
+      className="rounded"
+    />
+  </div>
     </div>
     </div>
   );

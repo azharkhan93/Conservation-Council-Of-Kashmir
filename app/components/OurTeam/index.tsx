@@ -252,7 +252,7 @@ const LeadershipSlider = () => {
                 <FaLinkedin className="text-3xl text-blue hover:text-blue mt-32 " />
               </a> */}
               <h4 className="text-2xl text-gray-700 dark:text-lacoste">Fahad Javaid</h4>
-              <span className="block text-1.5xl text-gradient font-bold mt-2">CEO-Founder</span>
+              <span className="block text-1.5xl text-gradient font-bold mt-2">Founder</span>
               <a href="https://www.linkedin.com/in/inamgani/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-2xl text-blue  -mt-26 ml-40 z-6 mt-4 hover:text-blue" />
               </a>
