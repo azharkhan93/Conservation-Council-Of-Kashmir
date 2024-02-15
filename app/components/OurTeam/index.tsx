@@ -209,30 +209,16 @@ const LeadershipSlider = () => {
             />
             
             <div>
-            {/* <a
-                href="https://www.linkedin.com/in/azamiftikhar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute inset-0 flex items-center justify-center mt-24"
-              >
-                <FaLinkedin className="text-3xl text-blue hover:text-blue mt-32 " />
-              </a> */}
+            
               <h4 className="text-2xl text-gray-700 dark:text-lacoste">Azam Iftikhar</h4>
               <span className="block text-1xl font-bold text-gradient mt-2">Co-founder</span>
               <a href="https://www.linkedin.com/in/azamiftikhar/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-2xl text-blue  -mt-26 ml-40 z-6 mt-4 hover:text-blue" />
               </a>
-              {/* <a
-                href="https://www.linkedin.com/in/azamiftikhar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute inset-0 flex items-center justify-center"
-              >
-                <FaLinkedin className="text-3xl text-blue hover:text-blue" />
-              </a> */}
+              
             </div>
           </div>
-          {/* ...Content for Jonathan Doe */}
+          
           <div className="space-y-4 text-center">
             <img
               className="mx-auto h-64 w-64 rounded-xl object-cover md:h-64 md:w-48 lg:h-80 lg:w-64"
@@ -243,14 +229,7 @@ const LeadershipSlider = () => {
               height="667"
             />
             <div>
-            {/* <a
-                href="https://www.linkedin.com/in/azamiftikhar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute inset-0 flex items-center justify-center mt-24"
-              >
-                <FaLinkedin className="text-3xl text-blue hover:text-blue mt-32 " />
-              </a> */}
+            
               <h4 className="text-2xl text-gray-700 dark:text-lacoste">Fahad Javaid</h4>
               <span className="block text-1.5xl text-gradient font-bold mt-2">Founder</span>
               <a href="https://www.linkedin.com/in/inamgani/" target="_blank" rel="noopener noreferrer">
@@ -259,8 +238,8 @@ const LeadershipSlider = () => {
             </div>
           </div>
           
-          {/* ...Content for Anabelle Doe */}
-          <div className="space-y-4 text-center">
+          
+          {/* <div className="space-y-4 text-center">
             <img
               className="mx-auto h-64 w-64 rounded-xl object-cover md:h-40 md:w-40 lg:h-64 lg:w-64"
               src="/images/team/Tabin.jpeg"
@@ -277,6 +256,23 @@ const LeadershipSlider = () => {
                 <FaLinkedin className="text-2xl text-blue  -mt-26 ml-40 z-6 mt-4 hover:text-blue" />
               </a>
               
+            </div>
+          </div> */}
+          <div className="space-y-4 text-center">
+            <img
+              className="mx-auto h-64 w-64 rounded-xl object-cover md:h-64 md:w-48 lg:h-80 lg:w-64"
+              src="/images/team/Tabin.jpeg"
+              alt="man"
+              loading="lazy"
+              width="1000"
+              height="667"
+            />
+            <div>
+              <h4 className="text-2xl text-gray-700 dark:text-lacoste">Tabin Tariq</h4>
+              <span className="block text-1xl text-gradient font-bold mt-2">Media Secretary</span>
+              <a href="https://www.linkedin.com/in/inamgani/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="text-2xl text-blue  -mt-26 ml-40 z-6 mt-4 hover:text-blue" />
+              </a>
             </div>
           </div>
           <div className="space-y-4 text-center">
