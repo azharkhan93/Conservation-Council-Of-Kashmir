@@ -17,14 +17,14 @@ const postData: DataType[] = [
     heading: "Cleanup drive",
     heading2: "Dara, Srinagar",
     name: "Removal of litter, debris and installation of bins.",
-    date: "October 15, 2023 / Completed",
+    date: "Completed",
     imgSrc: "/images/latestwork/Azam35.jpg",
   },
   {
     heading: "Cleanup drive",
     heading2: "Yusmarg, Budgam",
     name: "Removal of litter and debris. ",
-    date: "October 29, 2023",
+    date: "Completed",
     imgSrc: "/images/latestwork/Azam7.jpg",
   },
   // {
@@ -38,8 +38,15 @@ const postData: DataType[] = [
     heading: "Plastic bag reduction drive",
     heading2: "Harwan, Srinagar",
     name: "Distribution of reusable bags ",
-    date: "November 5, 2023",
+    date: "Completed",
     imgSrc: "/images/latestwork/plastic.jpeg",
+  },
+  {
+    heading: "Tree Plantation Drive",
+    heading2: "Darbal, Bemina",
+    name: "Join Us In Planting Trees",
+    date: "March 5, 2024 Onwards",
+    imgSrc: "/images/aboutus/slider4.jpeg",
   },
   /*
   {
