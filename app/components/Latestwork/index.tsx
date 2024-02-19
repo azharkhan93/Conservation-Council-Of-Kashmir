@@ -100,7 +100,7 @@ const MultipleItems: React.FC = () => {
     <div className="bg-gray-200 py-20 ">
       <div className="mx-auto max-w-7xl sm:py-4 lg:px-8">
         <div className="text-center">
-          <h3 className="text-2xl text-gradient  sm:text-5xl font-bold mb-2">
+          <h3 className="text-3xl text-gradient  sm:text-5xl font-bold mb-2">
           our upcoming & completed initiatives
           </h3>
         </div>
